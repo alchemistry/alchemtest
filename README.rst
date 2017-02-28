@@ -9,3 +9,5 @@ change with time.
 The datasets come from a variety of software packages, primarily molecular
 dynamics engines, and are used as the test set for `alchemlyb`_.
 The package is standalone, however, and can be used for any purpose.
+
+.. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
