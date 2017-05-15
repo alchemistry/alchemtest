@@ -26,7 +26,7 @@ def load_benzene():
     data = {'Coulomb': glob(join(module_path, 'benzene/Coulomb/*/dhdl.xvg.bz2')),
             'VDW': glob(join(module_path, 'benzene/VDW/*/dhdl.xvg.bz2'))}
 
-    with open(join(module_path, 'benzene', 'descr.txt')) as rst_file:
+    with open(join(module_path, 'benzene', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,

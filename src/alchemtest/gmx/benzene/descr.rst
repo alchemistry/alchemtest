@@ -9,7 +9,7 @@ Data Set Characteristics:
     :Length of Windows: 40ns
 
     :Missing Values: None
-    :Creator: I. Kenney
+    :Creator: \I. Kenney
     :Donor: Ian Kenney (ian.kenney@asu.edu)
     :Date: March 2017
 

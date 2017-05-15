@@ -15,7 +15,7 @@ The package is standalone, however, and can be used for any purpose.
 .. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Overview
 
     install
