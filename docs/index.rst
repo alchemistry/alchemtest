@@ -19,7 +19,6 @@ The package is standalone, however, and can be used for any purpose.
     :caption: Overview
 
     install
-    examples
     usage
 
 .. toctree::
