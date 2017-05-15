@@ -4,8 +4,8 @@
 Gromacs datasets
 ================
 
-The datasets detailed here were generated using the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
-They can be accessed using 
+The `alchemlyb.gmx` module features datasets generated using the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
+They can be accessed using the following accessor functions:
 
 .. currentmodule:: alchemtest.gmx
 
@@ -17,3 +17,5 @@ They can be accessed using
 .. _gmx_benzene:
 
 .. include:: ../src/alchemtest/gmx/benzene/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_benzene
