@@ -9,6 +9,7 @@ Data Set Characteristics:
     :Length of Windows: 40ns
     :System Size: 1668 atoms
     :Temperature: 300 K
+    :Pressure: 1 bar
     :Alchemical Pathway: vdw + coul --> vdw --> vacuum
 
     :Missing Values: None
