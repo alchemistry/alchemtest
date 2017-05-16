@@ -7,6 +7,10 @@ Data Set Characteristics:
     :Number of Legs: 2 (Coulomb, VDW)
     :Number of Windows: 5 for Coulomb, 16 for VDW
     :Length of Windows: 40ns
+    :System Size: 1668 atoms
+    :Temperature: 300 K
+    :Pressure: 1 bar
+    :Alchemical Pathway: vdw + coul --> vdw --> vacuum
 
     :Missing Values: None
     :Creator: \I. Kenney
