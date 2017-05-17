@@ -11,6 +11,8 @@ Data Set Characteristics:
     :Temperature: 300 K
     :Pressure: 1 bar
     :Alchemical Pathway: vdw + coul --> vdw --> vacuum
+    :Experimental Hydration Free Energy: -0.90 +- 0.2 kcal/mol
+    :
 
     :Missing Values: None
     :Creator: \I. Kenney
@@ -21,3 +23,9 @@ Benzene in water, alchemically turned into benzene in vacuum separated from wate
 
 This dataset was generated using `MDPOW <https://github.com/Becksteinlab/MDPOW>`_, with
 the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
+
+Experimental value sourced from [Mobley 2013].
+
+.. [Mobley 2013] Mobley, David L. (2013). Experimental and Calculated Small 
+    Molecule Hydration Free Energies. UC Irvine: Department of Pharmaceutical 
+    Sciences, UCI. Retrieved from: http://escholarship.org/uc/item/6sd403pz
