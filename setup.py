@@ -10,12 +10,12 @@ For a basic installation just type the command::
 from setuptools import setup, find_packages
 
 setup(name='alchemtest',
-      version='0.1.0-dev',
+      version='0.1.0',
       description='the simple alchemistry test set',
       author='David Dotson',
       author_email='dotsdl@gmail.com',
       classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
