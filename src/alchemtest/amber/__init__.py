@@ -1,4 +1,4 @@
-"""Gromacs molecular dynamics simulation datasets.
+"""Amber molecular dynamics simulation datasets.
 
 """
 

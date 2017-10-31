@@ -8,7 +8,7 @@ from glob import glob
 from sklearn.datasets.base import Bunch
 
 def load_simplesolvated():
-    """Load the Gromacs benzene dataset.
+    """Load the Amber solvated dataset.
 
 
     Returns
@@ -30,5 +30,3 @@ def load_simplesolvated():
 
     return Bunch(data=data,
                  DESCR=fdescr)
-dataset = load_simplesolvated()
-print "Check the dataset", dataset
