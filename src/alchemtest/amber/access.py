@@ -21,7 +21,6 @@ def load_simplesolvated():
     """
 
     module_path = dirname(__file__)
-    print "Check the module path", module_path
     data = {'charge': glob(join(module_path, 'simplesolvated/charge/*/ti-*.out')),
             'vdw': glob(join(module_path, 'simplesolvated/vdw/*/ti-*.out'))}
 
