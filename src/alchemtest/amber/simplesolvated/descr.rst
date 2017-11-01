@@ -12,10 +12,10 @@ Data Set Characteristics:
     :Pressure: 1 bar
     :Alchemical Pathway: (charge + vdw) in ligand 1 --> (charge + vdw) in ligand 2, charge and vdw are running in parellel, soft core is used in vdw
     :Experimental Free Energy difference: N/A 
-
     :Missing Values: None
     :Date: Oct 2017
     :Donor: Silicon Therapeutics 
+    :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ Public Domain Dedication
 
 Small molecule perturbation in water, alchemically turned ligand 1 into ligand 2 in water
 
