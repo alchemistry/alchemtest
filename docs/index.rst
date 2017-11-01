@@ -26,3 +26,4 @@ The package is standalone, however, and can be used for any purpose.
     :caption: Datasets
 
     gmx
+    amber
