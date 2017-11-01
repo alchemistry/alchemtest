@@ -31,3 +31,4 @@ Datasets are released under an `open license`_ that conforms to the `Open Defini
     :caption: Datasets
 
     gmx
+    amber
