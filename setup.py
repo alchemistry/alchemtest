@@ -9,8 +9,11 @@ For a basic installation just type the command::
 
 from setuptools import setup, find_packages
 
+import versioneer
+
 setup(name='alchemtest',
-      version='0.2.0-dev',
+      version=versioneer.get_version(),
+      cmdclass=versioneer.get_cmdclass(),
       description='the simple alchemistry test set',
       author='David Dotson',
       author_email='dotsdl@gmail.com',
@@ -27,4 +30,4 @@ setup(name='alchemtest',
       long_description=open('README.rst').read(),
       install_requires=['scikit-learn'],
       include_package_data=True,
-      )
+)
