@@ -43,7 +43,7 @@ def load_invalidfiles():
     """
     
     module_path = dirname(__file__)
-    data = [glob(join(module_path, 'invalidfiles/*.out'))]
+    data = [glob(join(module_path, 'invalidfiles/*.out.bz2'))]
     
     with open(join(module_path, 'invalidfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
