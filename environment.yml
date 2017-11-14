@@ -1,6 +1,4 @@
 name: alchemtest
 dependencies:
 - python=3.5
-- numpy
-- scikit-learn
 - sphinx

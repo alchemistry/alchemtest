@@ -5,8 +5,8 @@
 from os.path import dirname
 from os.path import join
 from glob import glob
-from sklearn.datasets.base import Bunch
 
+from .. import Bunch
 
 def load_benzene():
     """Load the Gromacs benzene dataset.
