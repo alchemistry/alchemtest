@@ -2,8 +2,7 @@
 
 """
 
-from os.path import dirname
-from os.path import join
+from os.path import dirname, join
 from glob import glob
 
 from .. import Bunch
@@ -11,11 +10,11 @@ from .. import Bunch
 def load_simplesolvated():
     """Load the Amber solvated dataset.
 
-
     Returns
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
+
         - 'data' : the data files by alchemical leg
         - 'DESCR': the full description of the dataset
 
@@ -38,6 +37,7 @@ def load_invalidfiles():
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
+
         - 'data' : the example of invalid data files
         - 'DESCR': the full description of the dataset
 

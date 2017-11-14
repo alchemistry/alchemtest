@@ -10,20 +10,22 @@ The current set of submodules are:
 .. autosummary::
 
    gmx
-
+   amber
 
 As an example, we can access the :ref:`gmx_benzene` dataset with::
 
     >>> from alchemtest.gmx import load_benzene
     >>> bz = load_benzene()
 
-and use the resulting ``Bunch`` object to introspect what this dataset includes.
+and use the resulting :class:`Bunch` object to introspect what this dataset includes.
 In particular, it features a ``DESCR`` attribute with a human-readable description of the dataset::
 
     >>> print(bz.DESCR)
     Gromacs: Benzene in water
     =========================
-    
+
+    Benzene in water, alchemically turned into benzene in vacuum separated from water
+      
     Notes
     -----
     Data Set Characteristics:
@@ -35,8 +37,9 @@ In particular, it features a ``DESCR`` attribute with a human-readable descripti
         :Creator: \I. Kenney
         :Donor: Ian Kenney (ian.kenney@asu.edu)
         :Date: March 2017
-    
-    Benzene in water, alchemically turned into benzene in vacuum separated from water
+        :License: `CC0
+                  <https://creativecommons.org/publicdomain/zero/1.0/>`_
+                  Public Domain Dedication
     
     This dataset was generated using `MDPOW <https://github.com/Becksteinlab/MDPOW>`_, with
     the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
