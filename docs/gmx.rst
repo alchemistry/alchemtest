@@ -1,4 +1,4 @@
-.. _gmx:
+.. _gmx-datasets:
 
 ================
 Gromacs datasets

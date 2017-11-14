@@ -25,6 +25,7 @@ Datasets are released under an `open license`_ that conforms to the `Open Defini
 
     install
     usage
+    helpers
 
 .. toctree::
     :maxdepth: 1

@@ -1,6 +1,8 @@
 Gromacs: Benzene in water
 =========================
 
+Benzene in water, alchemically turned into benzene in vacuum separated from water
+
 Notes
 -----
 Data Set Characteristics:
@@ -16,9 +18,9 @@ Data Set Characteristics:
     :Creator: \I. Kenney
     :Donor: Ian Kenney (ian.kenney@asu.edu)
     :Date: March 2017
-    :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_ Public Domain Dedication 
-	      
-Benzene in water, alchemically turned into benzene in vacuum separated from water
+    :License: `CC0
+	      <https://creativecommons.org/publicdomain/zero/1.0/>`_
+	      Public Domain Dedication       
 
 This dataset was generated using `MDPOW <https://github.com/Becksteinlab/MDPOW>`_, with
 the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
