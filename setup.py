@@ -28,6 +28,5 @@ setup(name='alchemtest',
       package_dir={'': 'src'},
       license='BSD',
       long_description=open('README.rst').read(),
-      install_requires=['scikit-learn'],
       include_package_data=True,
 )
