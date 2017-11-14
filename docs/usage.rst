@@ -2,8 +2,10 @@
 
 Basic usage
 ===========
-All datasets in :mod:`alchemtest` are accessible via ``load_*`` functions, organized in submodules by the software package that generated them.
-The current set of submodules are:
+
+All datasets in :mod:`alchemtest` are accessible via ``load_*``
+functions, organized in submodules by the software package that
+generated them.  The current set of submodules are:
 
 .. currentmodule:: alchemtest
 
@@ -17,8 +19,9 @@ As an example, we can access the :ref:`gmx_benzene` dataset with::
     >>> from alchemtest.gmx import load_benzene
     >>> bz = load_benzene()
 
-and use the resulting :class:`Bunch` object to introspect what this dataset includes.
-In particular, it features a ``DESCR`` attribute with a human-readable description of the dataset::
+and use the resulting :class:`Bunch` object to introspect what this
+dataset includes.  In particular, it features a ``DESCR`` attribute
+with a human-readable description of the dataset::
 
     >>> print(bz.DESCR)
     Gromacs: Benzene in water
@@ -49,8 +52,9 @@ as well as the dataset itself::
     >>>  bz.data.keys()
     ['VDW', 'Coulomb']
 
-which consists in this case of two alchemical legs, each having several files.
-For this dataset each file happens to correspond to a simulation sampling a particular :math:`\lambda`::
+which consists in this case of two alchemical legs, each having
+several files.  For this dataset each file happens to correspond to a
+simulation sampling a particular :math:`\lambda`::
 
     >>> bz.data['Coulomb']
     ['/usr/local/python3.6/site-packages/alchemtest/gmx/benzene/Coulomb/0000/dhdl.xvg.bz2',
@@ -59,5 +63,6 @@ For this dataset each file happens to correspond to a simulation sampling a part
      '/usr/local/python3.6/site-packages/alchemtest/gmx/benzene/Coulomb/0750/dhdl.xvg.bz2',
      '/usr/local/python3.6/site-packages/alchemtest/gmx/benzene/Coulomb/1000/dhdl.xvg.bz2']
 
-These paths can be read by any appropriate parser for further analysis.
-For this particular dataset, see :mod:`alchemlyb.parsing.gmx` for a good set of parsers.
+These paths can be read by any appropriate parser for further
+analysis.  For this particular dataset, see
+:mod:`alchemlyb.parsing.gmx` for a good set of parsers.

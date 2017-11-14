@@ -7,7 +7,7 @@ dynamics engines, and are used as the test set for `alchemlyb`_.
 The package is standalone, however, and can be used for any purpose.
 
 Datasets are released under an `open license`_ that conforms to the
-`Open Definition 2.1`_) that allows free use, re-use, redistribution,
+`Open Definition 2.1`_ that allows free use, re-use, redistribution,
 modification, separation, for any purpose and without a charge.
 
 
