@@ -5,7 +5,8 @@
 from os.path import dirname
 from os.path import join
 from glob import glob
-from sklearn.datasets.base import Bunch
+
+from .. import Bunch
 
 def load_simplesolvated():
     """Load the Amber solvated dataset.
@@ -41,12 +42,12 @@ def load_invalidfiles():
         - 'DESCR': the full description of the dataset
 
     """
-    
+
     module_path = dirname(__file__)
     data = [glob(join(module_path, 'invalidfiles/*.out.bz2'))]
-    
+
     with open(join(module_path, 'invalidfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
-    
+
     return Bunch(data=data,
                  DESCR=fdescr)
