@@ -55,7 +55,7 @@ def load_expanded_ensemble_case_1():
     return Bunch(data=data,
                  DESCR=fdescr)
 
-def load_expanded_ensemble_case_1():
+def load_expanded_ensemble_case_2():
     """Load the Gromacs Host CB7 Guest C3 expanded ensemble dataset, case 2 (two simulations visit all states independetly).
 
 
