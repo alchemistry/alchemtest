@@ -6,6 +6,7 @@ Notes
 Data Set Characteristics:
     :Number of Legs: 2 (Coulomb, VDW)
     :Number of Windows: 32 total, 20 for Coulomb, 12 for VDW
+    :Number of Simulations: 1
     :Length of Simulation: 100ns
     :System Size: 8286 atoms
     :Temperature: 300 K
