@@ -56,7 +56,7 @@ def load_expanded_ensemble_case_1():
                  DESCR=fdescr)
 
 def load_expanded_ensemble_case_2():
-    """Load the Gromacs Host CB7 Guest C3 expanded ensemble dataset, case 2 (two simulations visit all states independetly).
+    """Load the Gromacs Host CB7 Guest C3 expanded ensemble dataset, case 2 (two simulations visit all states independently).
 
 
     Returns
@@ -72,7 +72,30 @@ def load_expanded_ensemble_case_2():
 
     data = {'AllStates': glob(join(module_path, 'expanded_ensemble/case_2/*.xvg.gz'))}
 
-    with open(join(module_path, 'expanded_ensemble/case_1', 'descr.rst')) as rst_file:
+    with open(join(module_path, 'expanded_ensemble/case_2', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+def load_expanded_ensemble_case_3():
+    """Load the Gromacs Host CB7 Guest C3 expanded ensemble dataset, case 3 (REX).
+
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {'AllStates': glob(join(module_path, 'expanded_ensemble/case_3/*.xvg.gz'))}
+
+    with open(join(module_path, 'expanded_ensemble/case_3', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,

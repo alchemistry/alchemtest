@@ -19,4 +19,4 @@ Data Set Characteristics:
 	      
 Host CB7 and Guest C3 in water, Guest C3 alchemically turned into Guest C3 in vacuum separated from water and Host CB7
 
-This dataset was generated using the expanded ensemble aglorithm in the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine. 
+This dataset was generated using the expanded ensemble algorithm in the `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine.
