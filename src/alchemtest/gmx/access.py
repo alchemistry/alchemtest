@@ -79,7 +79,7 @@ def load_expanded_ensemble_case_2():
                  DESCR=fdescr)
 
 def load_expanded_ensemble_case_3():
-    """Load the Gromacs Host CB7 Guest C3 expanded ensemble dataset, case 3 (REX).
+    """Load the Gromacs Host CB7 Guest C3 REX dataset, case 3.
 
 
     Returns
