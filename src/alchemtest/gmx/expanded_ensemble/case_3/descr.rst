@@ -1,7 +1,7 @@
 Gromacs: Host CB7 and Guest C3 in water
 =======================================
 
-Host CB7 and Guest C3 in water, Guest C3 alchemically turned into Guest C3 in vacuum separated from water and Host CB7. This unpublished data uses Host CB7 and Guest C3 from [Muddana2014].
+Host CB7 and Guest C3 in water, Guest C3 alchemically turned into Guest C3 in vacuum separated from water and Host CB7. This unpublished data uses Host CB7 and Guest C3 from [Muddana2014]_.
 
 Notes
 -----
