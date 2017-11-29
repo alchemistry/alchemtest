@@ -14,10 +14,46 @@ can be accessed using the following accessor functions:
 .. autosummary::
 
    load_benzene
+   load_expanded_ensemble_case_1
+   load_expanded_ensemble_case_2
+   load_expanded_ensemble_case_3
+
+
+-----------------
+Simple TI and FEP
+-----------------
+
+The data sets contain derivatives of the Hamiltonian (TI) and free
+energy perturbation (FEP) data suitable for processing with FEP
+estimators as well as BAR/MBAR. Individual :math:`\lambda` windows
+were run independently.
 
 
 .. _gmx_benzene:
-
 .. include:: ../src/alchemtest/gmx/benzene/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_benzene
+
+
+-----------------		  
+Extended ensemble
+-----------------
+
+Data for *extended ensemble* simulations; case 1 and case 2 are
+extended ensembles in the alchemical parameters, case 3 includes
+replica exchange (REX).
+
+.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_1/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_1
+
+		  
+.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_2/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_2
+
+		  
+.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_3/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_3
+   
