@@ -39,6 +39,7 @@ def load_expanded_ensemble_case_1():
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
+
         - 'data' : the data files by alchemical leg
         - 'DESCR': the full description of the dataset
 
@@ -62,6 +63,7 @@ def load_expanded_ensemble_case_2():
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
+
         - 'data' : the data files by alchemical leg
         - 'DESCR': the full description of the dataset
 
@@ -85,6 +87,7 @@ def load_expanded_ensemble_case_3():
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
+
         - 'data' : the data files by alchemical leg
         - 'DESCR': the full description of the dataset
 
