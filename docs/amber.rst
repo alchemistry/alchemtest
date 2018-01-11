@@ -20,7 +20,7 @@ They can be accessed using the following accessor functions:
 
 .. _amber_bace_example:
 
-.. include:: ../src/alchemtest/amber/bace_CAT-13d~CAT-17a
+.. include:: ../src/alchemtest/amber/bace_CAT-13d~CAT-17a/descr.rst
 
 .. autofunction:: alchemtest.amber.load_bace_example
 
