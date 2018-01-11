@@ -7,6 +7,7 @@ from glob import glob
 
 from .. import Bunch
 
+
 def load_bace_example():
     """Load Amber Bace example perturbation.
     Returns
@@ -36,6 +37,7 @@ def load_bace_example():
     return Bunch(data=data,
                  DESCR=fdescr)
 
+
 def load_simplesolvated():
     """Load the Amber solvated dataset.
 
@@ -58,6 +60,7 @@ def load_simplesolvated():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
 
 def load_invalidfiles():
     """Load the invalid files.
