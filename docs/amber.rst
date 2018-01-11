@@ -14,8 +14,16 @@ They can be accessed using the following accessor functions:
 
 .. autosummary::
 
+   load_bace_example
    load_simplesolvated
    load_invalidfiles
+
+.. _amber_bace_example:
+
+.. include:: ../src/alchemtest/amber/bace_CAT-13d~CAT-17a
+
+.. autofunction:: alchemtest.amber.load_bace_example
+
 
 .. _amber_simplesolvated:
 
