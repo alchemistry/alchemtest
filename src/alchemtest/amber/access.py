@@ -8,6 +8,26 @@ from glob import glob
 from .. import Bunch
 
 
+def load_bace_improper():
+    """Load Amber Bace improper solvated vdw example
+    Returns
+    -------
+    data: Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files for improper solvated vdw alchemical leg
+
+    """
+    module_path = dirname(__file__)
+    data = {'vdw': glob(join(module_path, 'bace_improper/solvated/vdw/*/ti-*.out.bz2'))}
+
+    with open(join(module_path, 'bace_improper', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+
 def load_bace_example():
     """Load Amber Bace example perturbation.
     Returns
@@ -15,19 +35,19 @@ def load_bace_example():
     data: Bunch
         Dictionary-like object, the interesting attributes are:
 
-        - 'data' : the data files files by system and alchemical leg
+        - 'data' : the data files by system and alchemical leg
 
     """
     module_path = dirname(__file__)
     data = {'complex':
-                {'decharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/decharge/*/ti-*.out')),
-                 'recharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/recharge/*/ti-*.out')),
-                 'vdw': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/vdw/*/ti-*.out'))
+                {'decharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/decharge/*/ti-*.out.bz2')),
+                 'recharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/recharge/*/ti-*.out.bz2')),
+                 'vdw': glob(join(module_path, 'bace_CAT-13d~CAT-17a/complex/vdw/*/ti-*.out.bz2'))
                  },
             'solvated':
-                {'decharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/decharge/*/ti-*.out')),
-                 'recharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/recharge/*/ti-*.out')),
-                 'vdw': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/vdw/*/ti-*.out'))
+                {'decharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/decharge/*/ti-*.out.bz2')),
+                 'recharge': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/recharge/*/ti-*.out.bz2')),
+                 'vdw': glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/vdw/*/ti-*.out.bz2'))
                  }
             }
 

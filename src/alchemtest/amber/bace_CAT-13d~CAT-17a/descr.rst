@@ -1,7 +1,7 @@
 Amber: Small molecule thermodynamic integration free energy difference in water
 ===============================================================================
 
-Bace complex and solvated small molecule perturbation in water, alchemically turned ligand 1 into ligand
+Bace complex and solvated small molecule perturbation, alchemical perturbation of ligand 1 into ligand
 2. This example uses ligands CAT-13d to CAT-17a from [Wang2015]_.
 
 
