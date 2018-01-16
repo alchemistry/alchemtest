@@ -1,23 +1,21 @@
 Amber: Small molecule thermodynamic integration free energy difference in water
 ===============================================================================
 
-Bace complex and solvated small molecule perturbation, alchemical perturbation of ligand 1 into ligand
-2. This example uses ligands CAT-13d to CAT-17a from [Wang2015]_.
+Improper Bace solvated small molecule perturbation, alchemical vdw perturbation of ligand 1 into ligand
+2. This example uses ligands CAT-13a to CAT-13m from [Wang2015]_.
 
 
 Notes
 -----
 Data Set Characteristics:
-    :Number of Legs: 3 (decharge, vdw, recharge)
-    :Number of Windows: 5 for decharge, 12 for vdw, 5 for recharge
+    :Number of Legs: 1 (vdw)
+    :Number of Windows: 12
     :Length of Windows: 1ns
-    :System Size: 46594 atoms (complex), 4115 atoms (solvated)
+    :System Size: 3920 atoms
     :Temperature: 300 K
     :Pressure: 1 bar
-    :Alchemical Pathway: (decharge + vdw + recharge) in ligand 1 --> (decharge + vdw + recharge) in
-                         ligand 2, decharge, vdw, and recharge are running in parellel, soft
-                         core is used in vdw
-    :Experimental Free Energy difference: -0.26 kcal/mol
+    :Alchemical Pathway: vdw in ligand 1 --> vdw in ligand 2, softcore is used in vdw
+    :Experimental Free Energy difference: N/A
     :Missing Values: None
     :Date: Jan 2018
     :Donor: Silicon Therapeutics 

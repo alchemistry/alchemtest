@@ -8,6 +8,27 @@ from glob import glob
 from .. import Bunch
 
 
+
+def load_bace_improper():
+    """Load Amber Bace improper solvated vdw example
+    Returns
+    -------
+    data: Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files for improper solvated vdw alchemical leg
+
+    """
+    module_path = dirname(__file__)
+    data = {'vdw': glob(join(module_path, 'bace_improper/solvated/vdw/*/ti-*.out.bz2'))}
+
+    with open(join(module_path, 'bace_improper', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+
 def load_bace_example():
     """Load Amber Bace example perturbation.
     Returns
@@ -15,7 +36,7 @@ def load_bace_example():
     data: Bunch
         Dictionary-like object, the interesting attributes are:
 
-        - 'data' : the data files files by system and alchemical leg
+        - 'data' : the data files by system and alchemical leg
 
     """
     module_path = dirname(__file__)

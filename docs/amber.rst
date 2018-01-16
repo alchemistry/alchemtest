@@ -14,9 +14,19 @@ They can be accessed using the following accessor functions:
 
 .. autosummary::
 
+
+   load_bace_improper
    load_bace_example
    load_simplesolvated
    load_invalidfiles
+
+
+.. _amber_bace_improper:
+
+.. include:: ../src/alchemtest/amber/bace_improper/descr.rst
+
+.. autofunction:: alchemtest.amber.load_bace_improper
+
 
 .. _amber_bace_example:
 
