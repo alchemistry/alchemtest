@@ -1,6 +1,8 @@
 alchemtest: the simple alchemistry test set
 ===========================================
 
+|doi| |docs|
+
 **alchemtest**  is a collection of test datasets for alchemical free energy calculations.
 The datasets come from a variety of software packages, primarily molecular
 dynamics engines, and are used as the test set for `alchemlyb`_.
@@ -15,3 +17,15 @@ modification, separation, for any purpose and without a charge.
 .. _`open license`:
    http://opendefinition.org/licenses/#recommended-conformant-licenses
 .. _`Open Definition 2.1`: http://opendefinition.org/od/2.1/en/
+
+
+.. |docs| image:: https://readthedocs.org/projects/alchemtest/badge/?version=latest
+    :alt: Documentation
+    :scale: 100%
+    :target: https://alchemtest.readthedocs.io/en/latest/
+
+.. |doi| image:: https://zenodo.org/badge/XXXXX.svg
+    :alt: Zenodo DOI
+    :scale: 100%
+    :target: https://zenodo.org/badge/latestdoi/XXXXX
+	     
