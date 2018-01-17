@@ -12,7 +12,7 @@ Data Set Characteristics:
     :Number of Legs: 2 (forward Y-->A, backward A-->Y)
     :Number of Windows: 20 for each leg
     :Length of Windows: 25 ps (each window interspersed with 2 ps equilibration)
-    :System Size: 5979 atoms
+    :System Size: 1521 atoms
     :Temperature: 300 K
     :Pressure: 1 bar
     :Alchemical Pathway: Point mutation of Tyr to Ala using dual topology
