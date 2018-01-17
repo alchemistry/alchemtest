@@ -13,17 +13,29 @@ package is standalone, however, and can be used for any purpose.
 
 Datasets are released under an `open license`_ that conforms to the `Open
 Definition 2.1`_ that allows free use, re-use, redistribution, modification,
-separation, for any purpose and without a charge.
+separation, for any purpose and without a charge. All data and code
+can be found in the public GitHub repository `alchemistry/alchemtest`_.
+
+This library is **under active development**. We use `semantic
+versioning`_ to indicate clearly what kind of changes you may expect
+between releases. Although it is heavily used for the alchemlyb_ test
+suite it may contain bugs. Please raise any issues or questions in the
+`Issue Tracker`_. `Contributions of data sets`_ and code in the form
+of pull requests are very welcome.
 
 
 .. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
 .. _`open license`:
    http://opendefinition.org/licenses/#recommended-conformant-licenses
 .. _`Open Definition 2.1`: http://opendefinition.org/od/2.1/en/
-
-.. note:: This library is in an **alpha** state. The library and the
-          documentation is incomplete. Use in production at your own risk.
-
+.. _`alchemistry/alchemtest`:
+   https://github.com/alchemistry/alchemtest
+.. _`semantic versioning`: https://semver.org   
+.. _`Issue Tracker`:
+   https://github.com/alchemistry/alchemtest/issues
+.. _`Contributions of data sets`:
+   https://github.com/alchemistry/alchemtest/wiki/contributing
+   
 
 .. toctree::
     :maxdepth: 1

@@ -1,6 +1,5 @@
-=======================================================================
- NAMD: free energy of tyrosine to alanine mutation in aqueous solution
-=======================================================================
+NAMD: free energy of tyrosine to alanine mutation in aqueous solution
+=====================================================================
 
 Free energy change from mutating a tyrosine (Y) residue into 
 alanine (A) in the Ala-Tyr-Ala tripeptide in aqueous environment.
