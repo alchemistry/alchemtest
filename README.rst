@@ -24,8 +24,8 @@ modification, separation, for any purpose and without a charge.
     :scale: 100%
     :target: https://alchemtest.readthedocs.io/en/latest/
 
-.. |doi| image:: https://zenodo.org/badge/XXXXX.svg
+.. |doi| image:: https://zenodo.org/badge/83470847.svg
     :alt: Zenodo DOI
     :scale: 100%
-    :target: https://zenodo.org/badge/latestdoi/XXXXX
+    :target: https://zenodo.org/badge/latestdoi/83470847
 	     
