@@ -24,5 +24,6 @@ Data Set Characteristics:
     :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_
               Public Domain Dedication
 
-This dataset was generated using the `NAMD <http://www.ambermd.org/>`_
-molecular dynamics engine.
+This dataset was generated using the `NAMD
+<http://http://www.ks.uiuc.edu/Research/namd/>`_ molecular dynamics
+engine.

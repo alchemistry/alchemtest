@@ -6,6 +6,8 @@
 alchemtest: the simple alchemistry test set
 ===========================================
 
+|doi|
+
 **alchemtest** is a collection of test datasets for alchemical free energy
 calculations.  The datasets come from a variety of software packages, primarily
 molecular dynamics engines, and are used as the test set for `alchemlyb`_.  The
@@ -23,6 +25,10 @@ suite it may contain bugs. Please raise any issues or questions in the
 `Issue Tracker`_. `Contributions of data sets`_ and code in the form
 of pull requests are very welcome.
 
+.. |doi| image:: https://zenodo.org/badge/83470847.svg
+    :alt: Zenodo DOI
+    :scale: 100%
+    :target: https://zenodo.org/badge/latestdoi/83470847
 
 .. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
 .. _`open license`:
