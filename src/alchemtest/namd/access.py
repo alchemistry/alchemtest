@@ -21,8 +21,8 @@ def load_tyr2ala():
     """
 
     module_path = dirname(__file__)
-    data = {'forward': glob(join(module_path, 'tyr2ala/in-aqua/forward/*.fepout')),
-            'backward': glob(join(module_path, 'tyr2ala/in-aqua/backward/*.fepout'))}
+    data = {'forward': glob(join(module_path, 'tyr2ala/in-aqua/forward/*.fepout.bz2')),
+            'backward': glob(join(module_path, 'tyr2ala/in-aqua/backward/*.fepout.bz2'))}
 
     with open(join(module_path, 'tyr2ala', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
