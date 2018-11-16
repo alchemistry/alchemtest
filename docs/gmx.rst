@@ -17,6 +17,9 @@ can be accessed using the following accessor functions:
    load_expanded_ensemble_case_1
    load_expanded_ensemble_case_2
    load_expanded_ensemble_case_3
+   load_water_particle_with_total_energy
+   load_water_particle_with_potential_energy
+   load_water_particle_without_energy
 
 
 -----------------
@@ -57,3 +60,19 @@ replica exchange (REX).
 
 .. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_3
    
+
+-------------------------
+Water particle TI and FEP
+-------------------------
+
+3 simple dH/dl and U_nk datasets of a single water particle from a
+simulations of water between to hydrophilic surfaces. One dataset
+contains a total energy column, one contains a potential energy column and
+one does not contain a energy column.
+
+.. _gmx_water_particle:
+.. include:: ../src/alchemtest/gmx/water_particle/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_water_particle_with_total_energy
+.. autofunction:: alchemtest.gmx.load_water_particle_with_potential_energy
+.. autofunction:: alchemtest.gmx.load_water_particle_without_energy
