@@ -102,3 +102,72 @@ def load_expanded_ensemble_case_3():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+def load_water_particle_without_energy():
+    """Load the Gromacs water particle without energy dataset.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'without_energy', '*.xvg.bz2'))}
+
+    with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+def load_water_particle_with_potential_energy():
+    """Load the Gromacs water particle with potential energy dataset.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_potential_energy', '*.xvg.bz2'))}
+
+    with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+def load_water_particle_with_total_energy():
+    """Load the Gromacs water particle with total energy dataset.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_total_energy', '*.xvg.bz2'))}
+
+    with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
