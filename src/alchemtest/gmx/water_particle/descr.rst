@@ -1,7 +1,7 @@
 Gromacs: water particle
 =========================
 
-Free energy Estimation of a water particle between to hydrophilic surfaces
+Free energy estimation of a water particle between to hydrophilic surfaces
 
 Notes
 -----
