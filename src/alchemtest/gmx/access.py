@@ -118,7 +118,7 @@ def load_water_particle_without_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle/without_energy/*.xvg.bz2'))}
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'without_energy', '*.xvg.bz2'))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -141,7 +141,7 @@ def load_water_particle_with_potential_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle/with_potential_energy/*.xvg.bz2'))}
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_potential_energy', '*.xvg.bz2'))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -164,7 +164,7 @@ def load_water_particle_with_total_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle/with_total_energy/*.xvg.bz2'))}
+    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_total_energy', '*.xvg.bz2'))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
