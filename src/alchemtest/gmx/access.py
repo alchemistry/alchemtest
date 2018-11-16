@@ -22,8 +22,8 @@ def load_benzene():
 
     module_path = dirname(__file__)
 
-    data = {'Coulomb': glob(join(module_path, 'benzene/Coulomb/*/dhdl.xvg.bz2')),
-            'VDW': glob(join(module_path, 'benzene/VDW/*/dhdl.xvg.bz2'))}
+    data = {'Coulomb': glob(join(module_path, 'benzene', 'Coulomb', '*', 'dhdl.xvg.bz2')),
+            'VDW': glob(join(module_path, 'benzene', 'VDW', '*', 'dhdl.xvg.bz2'))}
 
     with open(join(module_path, 'benzene', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -47,9 +47,9 @@ def load_expanded_ensemble_case_1():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'expanded_ensemble/case_1/CB7_Guest3_dhdl.xvg.gz'))}
+    data = {'AllStates': glob(join(module_path, 'expanded_ensemble', 'case_1', 'CB7_Guest3_dhdl.xvg.gz'))}
 
-    with open(join(module_path, 'expanded_ensemble/case_1', 'descr.rst')) as rst_file:
+    with open(join(module_path, 'expanded_ensemble', 'case_1', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
@@ -71,9 +71,9 @@ def load_expanded_ensemble_case_2():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'expanded_ensemble/case_2/*.xvg.gz'))}
+    data = {'AllStates': glob(join(module_path, 'expanded_ensemble', 'case_2', '*.xvg.gz'))}
 
-    with open(join(module_path, 'expanded_ensemble/case_2', 'descr.rst')) as rst_file:
+    with open(join(module_path, 'expanded_ensemble', 'case_2', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
@@ -95,9 +95,9 @@ def load_expanded_ensemble_case_3():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'expanded_ensemble/case_3/*.xvg.gz'))}
+    data = {'AllStates': glob(join(module_path, 'expanded_ensemble', 'case_3', '*.xvg.gz'))}
 
-    with open(join(module_path, 'expanded_ensemble/case_3', 'descr.rst')) as rst_file:
+    with open(join(module_path, 'expanded_ensemble', 'case_3', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
