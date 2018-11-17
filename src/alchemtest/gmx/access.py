@@ -22,8 +22,8 @@ def load_benzene():
 
     module_path = dirname(__file__)
 
-    data = {'Coulomb': glob(join(module_path, 'benzene', 'Coulomb', '*', 'dhdl.xvg.bz2')),
-            'VDW': glob(join(module_path, 'benzene', 'VDW', '*', 'dhdl.xvg.bz2'))}
+    data = {'Coulomb': sorted(glob(join(module_path, 'benzene', 'Coulomb', '*', 'dhdl.xvg.bz2'))),
+            'VDW': sorted(glob(join(module_path, 'benzene', 'VDW', '*', 'dhdl.xvg.bz2')))}
 
     with open(join(module_path, 'benzene', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -71,7 +71,7 @@ def load_expanded_ensemble_case_2():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'expanded_ensemble', 'case_2', '*.xvg.gz'))}
+    data = {'AllStates': sorted(glob(join(module_path, 'expanded_ensemble', 'case_2', '*.xvg.gz')))}
 
     with open(join(module_path, 'expanded_ensemble', 'case_2', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -95,7 +95,7 @@ def load_expanded_ensemble_case_3():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'expanded_ensemble', 'case_3', '*.xvg.gz'))}
+    data = {'AllStates': sorted(glob(join(module_path, 'expanded_ensemble', 'case_3', '*.xvg.gz')))}
 
     with open(join(module_path, 'expanded_ensemble', 'case_3', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -118,7 +118,7 @@ def load_water_particle_without_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle', 'without_energy', '*.xvg.bz2'))}
+    data = {'AllStates': sorted(glob(join(module_path, 'water_particle', 'without_energy', '*.xvg.bz2')))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -141,7 +141,7 @@ def load_water_particle_with_potential_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_potential_energy', '*.xvg.bz2'))}
+    data = {'AllStates': sorted(glob(join(module_path, 'water_particle', 'with_potential_energy', '*.xvg.bz2')))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -164,7 +164,7 @@ def load_water_particle_with_total_energy():
 
     module_path = dirname(__file__)
 
-    data = {'AllStates': glob(join(module_path, 'water_particle', 'with_total_energy', '*.xvg.bz2'))}
+    data = {'AllStates': sorted(glob(join(module_path, 'water_particle', 'with_total_energy', '*.xvg.bz2')))}
 
     with open(join(module_path, 'water_particle', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
