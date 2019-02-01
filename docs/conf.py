@@ -50,18 +50,14 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'alchemtest'
-copyright = u'2017, David Dotson'
-author = u'David Dotson'
+author = u'David Dotson and contributors'
+copyright = u'2017-2019, ' + author
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
-# The short X.Y version.
-#version = u'0.2'
-# The full version, including alpha/beta/rc tags.
-#release = u'0.2.0'
-
 # automatically get the version information (requires that
 # alchemtest is installed)
 # We always display the full release string; if something else is
@@ -175,4 +171,4 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None,
-                       'alchemlyb': ('http://alchemlyb.readthedocs.io/en/latest/', None)}
+                       'alchemlyb': ('https://alchemlyb.readthedocs.io/en/latest/', None)}
