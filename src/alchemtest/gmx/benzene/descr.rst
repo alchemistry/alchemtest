@@ -15,6 +15,8 @@ Data Set Characteristics:
     :Alchemical Pathway: vdw + coul --> vdw --> vacuum
     :Experimental Hydration Free Energy: -0.90 +- 0.2 kcal/mol
     :Missing Values: None
+    :Energy unit: kJ/mol
+    :Time unit: ps		   
     :Creator: \I. Kenney
     :Donor: Ian Kenney (ian.kenney@asu.edu)
     :Date: March 2017
