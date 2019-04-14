@@ -19,6 +19,8 @@ Data Set Characteristics:
                          core is used in vdw
     :Experimental Free Energy difference: -0.26 kcal/mol
     :Missing Values: None
+    :Energy unit: kcal/mol
+    :Time unit: ps	     
     :Date: Jan 2018
     :Donor: Silicon Therapeutics 
     :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_
