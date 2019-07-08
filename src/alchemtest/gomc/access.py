@@ -22,8 +22,7 @@ def load_benzene():
 
     module_path = dirname(__file__)
 
-    data = {'Coulomb': sorted(glob(join(module_path, 'benzene', 'Coulomb', 'Free_Energy_BOX_0_PRODUCTION_*.dat'))),
-            'VDW': sorted(glob(join(module_path, 'benzene', 'VDW', 'Free_Energy_BOX_0_PRODUCTION_*.dat')))}
+    data = sorted(glob(join(module_path, 'benzene', 'inWater', 'Free_Energy_BOX_0_PRODUCTION_*.dat')))
 
     with open(join(module_path, 'benzene', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()

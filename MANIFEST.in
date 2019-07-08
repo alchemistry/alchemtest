@@ -1,5 +1,5 @@
 include *.rst
-recursive-include src/alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out
+recursive-include src/alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out *.dat
 include README.rst
 include LICENSE
 include versioneer.py
