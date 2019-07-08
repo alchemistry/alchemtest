@@ -58,4 +58,5 @@ of pull requests are very welcome.
     gmx
     amber
     namd
+    gomc
  
