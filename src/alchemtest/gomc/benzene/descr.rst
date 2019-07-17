@@ -16,6 +16,8 @@ Data Set Characteristics:
     :Alchemical Pathway: vacuum --> vdw --> vdw + coul
     :Experimental Hydration Free Energy: -0.90 +- 0.2 kcal/mol
     :Missing Values: None
+    :Energy unit: kJ/mol
+    :Time unit: Monte Carlo steps
     :Creator: \M. Soroush Barhaghi
     :Donor: Mohammad Soroush Barhaghi (m.soroush@wayne.edu)
     :Date: July 2019

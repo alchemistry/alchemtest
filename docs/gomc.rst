@@ -6,8 +6,8 @@ GOMC datasets
 .. automodule:: alchemtest.gomc
 
 The :mod:`alchemlyb.gomc` module features datasets generated using the
-`GOMC <http://gomc.eng.wayne.edu/>`_ Monte Carlo simulaiton engine.  They
-can be accessed using the following accessor functions:
+GPU Optimized Monte Carlo (`GOMC <http://gomc.eng.wayne.edu/>`_) simulation 
+engine. They can be accessed using the following accessor functions:
 
 .. currentmodule:: alchemtest.gomc
 
