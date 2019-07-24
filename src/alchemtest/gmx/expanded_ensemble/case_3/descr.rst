@@ -14,6 +14,8 @@ Data Set Characteristics:
     :Temperature: 300 K
     :Alchemical Pathway: vdw + coul --> vdw --> vacuum
     :Missing Values: None
+    :Energy unit: kJ/mol
+    :Time unit: ps		     
     :Creator: \T. Jensen
     :Donor: Travis Jensen (travis.jensen@colorado.edu)
     :Date: November 2017

@@ -19,6 +19,8 @@ Data Set Characteristics:
                          atoms are scaled with their environment.
     :Experimental Free Energy difference: N/A 
     :Missing Values: None
+    :Energy unit: kcal/mol
+    :Time unit: step		     
     :Date: Oct 2017
     :Donor: JC Gumbart
     :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_

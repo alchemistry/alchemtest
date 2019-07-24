@@ -17,6 +17,8 @@ Data Set Characteristics:
     :Alchemical Pathway: vdw in ligand 1 --> vdw in ligand 2, softcore is used in vdw
     :Experimental Free Energy difference: N/A
     :Missing Values: None
+    :Energy unit: kcal/mol
+    :Time unit: ps		     
     :Date: Jan 2018
     :Donor: Silicon Therapeutics 
     :License: `CC0 <https://creativecommons.org/publicdomain/zero/1.0/>`_
