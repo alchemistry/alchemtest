@@ -2,7 +2,7 @@ Installing alchemtest
 =====================
 
 **alchemtest** is pure-Python, so it can be installed easily via
- ``pip``::
+``pip``::
 
     pip install alchemtest
 
