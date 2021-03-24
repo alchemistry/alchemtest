@@ -14,6 +14,7 @@ can be accessed using the following accessor functions:
 .. autosummary::
 
    load_benzene
+   load_ABFE
    load_expanded_ensemble_case_1
    load_expanded_ensemble_case_2
    load_expanded_ensemble_case_3
@@ -76,3 +77,19 @@ one does not contain a energy column.
 .. autofunction:: alchemtest.gmx.load_water_particle_with_total_energy
 .. autofunction:: alchemtest.gmx.load_water_particle_with_potential_energy
 .. autofunction:: alchemtest.gmx.load_water_particle_without_energy
+
+---------------------------------------------------------------------
+Absolute Binding Free Energy of n-phenylglycinonitrile to T4 lysozyme
+---------------------------------------------------------------------
+
+The dataset for computing the absolute binding free energy of
+n-phenylglycinonitrile to T4 lysozyme. The calculation has two legs: complex
+and ligand. In the complex leg, restraint is applied to the ligand and the
+coulombic as well as the Van der Waals interactions are decoupled sequentially.
+In the ligand leg, only the coulombic and Van der Waals interactions are
+decoupled.
+
+
+.. include:: ../src/alchemtest/gmx/ABFE/descr.rst
+
+.. autofunction:: alchemtest.gmx.load_ABFE
