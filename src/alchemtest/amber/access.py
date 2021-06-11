@@ -11,6 +11,7 @@ from .. import Bunch
 
 def load_bace_improper():
     """Load Amber Bace improper solvated vdw example
+
     Returns
     -------
     data: Bunch
@@ -31,6 +32,7 @@ def load_bace_improper():
 
 def load_bace_example():
     """Load Amber Bace example perturbation.
+
     Returns
     -------
     data: Bunch
