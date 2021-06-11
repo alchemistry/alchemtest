@@ -2,7 +2,7 @@ Amber: Small molecule thermodynamic integration free energy difference in water
 ===============================================================================
 
 Improper Bace solvated small molecule perturbation, alchemical vdw perturbation of ligand 1 into ligand
-2. This example uses ligands CAT-13a to CAT-13m from [Wang2015]_.
+2. This example uses ligands CAT-13a to CAT-13m from [Wang2015b]_.
 
 
 Notes
@@ -28,7 +28,7 @@ This dataset was generated using the `Amber <http://www.ambermd.org/>`_
 molecular dynamics engine.
 	      
 
-.. [Wang2015] L. Wang, Y. Wu, Y. Deng, B. Kim, L. Pierce, G. Krilov, D. Lupyan, S. Robinson, M. K. Dahlgren, J. Greenwood, D. L. Romero, C. Masse, J. L. Knight, T. Steinbrecher, T. Beuming, W. Damm, E. Harder, W. Sherman, M. Brewer, R. Wester, M. Murcko, L. Frye, R. Farid, T. Lin, D. L. Mobley, W. L. Jorgensen, B. J. Berne, R. A. Friesner,
+.. [Wang2015b] L. Wang, Y. Wu, Y. Deng, B. Kim, L. Pierce, G. Krilov, D. Lupyan, S. Robinson, M. K. Dahlgren, J. Greenwood, D. L. Romero, C. Masse, J. L. Knight, T. Steinbrecher, T. Beuming, W. Damm, E. Harder, W. Sherman, M. Brewer, R. Wester, M. Murcko, L. Frye, R. Farid, T. Lin, D. L. Mobley, W. L. Jorgensen, B. J. Berne, R. A. Friesner,
 	      and R. Abel. Accurate and reliable prediction of
               relative ligand binding potency in prospective drug
               discovery by way of a modern free-energy calculation
