@@ -22,8 +22,14 @@ This library is **under active development**. We use `semantic
 versioning`_ to indicate clearly what kind of changes you may expect
 between releases. Although it is heavily used for the alchemlyb_ test
 suite it may contain bugs. Please raise any issues or questions in the
-`Issue Tracker`_. `Contributions of data sets`_ and code in the form
-of pull requests are very welcome.
+`Issue Tracker`_.
+
+.. Note::
+
+   :ref:`Contributions of data sets <contributing>` are very
+   welcome. Please raise an issue in the `Issue Tracker`_ to propose a
+   new data set and we will help you with the process of adding it to
+   **alchemtest**.
 
 .. |doi| image:: https://zenodo.org/badge/83470847.svg
     :alt: Zenodo DOI
@@ -39,8 +45,6 @@ of pull requests are very welcome.
 .. _`semantic versioning`: https://semver.org   
 .. _`Issue Tracker`:
    https://github.com/alchemistry/alchemtest/issues
-.. _`Contributions of data sets`:
-   https://github.com/alchemistry/alchemtest/wiki/contributing
    
 
 .. toctree::
@@ -49,6 +53,7 @@ of pull requests are very welcome.
 
     install
     usage
+    contributing
     helpers
 
 .. toctree::
