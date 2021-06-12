@@ -44,11 +44,10 @@ def load_idws():
     """
 
     module_path = dirname(__file__)
-    data = {'forward': glob(join(module_path, 'idws/*.fepout.bz2'))}
+    data = {'forward': [join(module_path, 'idws', 'quickidws.fepout.bz2']}
 
     with open(join(module_path, 'idws', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
                  DESCR=fdescr)
-
