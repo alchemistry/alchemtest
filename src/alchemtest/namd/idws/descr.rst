@@ -19,7 +19,7 @@ Data Set Characteristics:
     :Alchemical Pathway: dummy mutation of ethane into ethane using dual topology
                          hybrid molecule. Nonbonded interactions of perturbed
                          atoms are scaled with their environment.
-    :Experimental Free Energy difference: N/A 
+    :Theoretical Free Energy difference: 0
     :Missing Values: None
     :Energy unit: kcal/mol
     :Time unit: step
