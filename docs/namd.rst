@@ -15,9 +15,16 @@ engine. They can be accessed using the following accessor functions:
 .. autosummary::
 
    load_tyr2ala
+   load_idws
 
 .. _namd_tyr2ala:
 
 .. include:: ../src/alchemtest/namd/tyr2ala/descr.rst
 
 .. autofunction:: alchemtest.namd.load_tyr2ala
+
+.. _namd_idws:
+
+.. include:: ../src/alchemtest/namd/idws/descr.rst
+
+.. autofunction:: alchemtest.namd.load_idws
