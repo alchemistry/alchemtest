@@ -5,7 +5,7 @@ Gromacs datasets
 ================
 .. automodule:: alchemtest.gmx
 
-The :mod:`alchemlyb.gmx` module features datasets generated using the
+The :mod:`alchemtest.gmx` module features datasets generated using the
 `Gromacs <http://www.gromacs.org/>`_ molecular dynamics engine.  They
 can be accessed using the following accessor functions:
 

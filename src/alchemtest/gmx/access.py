@@ -106,7 +106,6 @@ def load_expanded_ensemble_case_2():
 def load_expanded_ensemble_case_3():
     """Load the Gromacs Host CB7 Guest C3 REX dataset, case 3.
 
-
     Returns
     -------
     data : Bunch

@@ -14,6 +14,7 @@ generated them.  The current set of submodules are:
    gmx
    amber
    namd
+   gomc
 
 As an example, we can access the :ref:`gmx_benzene` dataset with::
 
