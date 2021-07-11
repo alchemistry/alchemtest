@@ -1,7 +1,7 @@
 alchemtest: the simple alchemistry test set
 ===========================================
 
-|doi| |docs|
+|doi| |docs| |build| |cov|
 
 **alchemtest**  is a collection of test datasets for alchemical free energy calculations.
 The datasets come from a variety of software packages, primarily molecular
@@ -29,3 +29,12 @@ modification, separation, for any purpose and without a charge.
     :scale: 100%
     :target: https://zenodo.org/badge/latestdoi/83470847
 	     
+.. |build| image:: https://github.com/alchemistry/alchemtest/actions/workflows/ci.yaml/badge.svg?branch=master
+    :alt: Build Status
+    :scale: 100%
+    :target: https://github.com/alchemistry/alchemtest/actions/workflows/ci.yaml
+
+.. |cov| image:: https://codecov.io/gh/alchemistry/alchemtest/branch/master/graph/badge.svg
+    :alt: Code coverage
+    :scale: 100%
+    :target: https://codecov.io/gh/alchemistry/alchemtest
