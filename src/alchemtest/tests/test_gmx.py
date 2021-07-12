@@ -4,7 +4,7 @@ import pytest
 
 from alchemtest.gmx import load_benzene
 
-class Testbenzene():
+class TestBenzene:
     @pytest.fixture(scope="class",
                     params = [(load_benzene, ('Coulomb', 'VDW'), (5, 16)),
                               ])
@@ -30,4 +30,4 @@ class Testbenzene():
         for key in keys:
             for file in load_method().data[key]:
                 if not os.path.isfile(file):
-                    raise FileNotFoundError('No such file: {}'.format(file))
+                    raise AssertionError('Missing file in data set: {}'.format(file))
