@@ -61,7 +61,7 @@ jobs:
       shell: bash -l {0}
 
       run: |
-        pytest -v --cov=inflateorg --cov-report=xml --color=yes src/alchemtest/tests
+        pytest -v --cov=alchemtest --cov-report=xml --color=yes src/alchemtest/tests
 
     - name: CodeCov
       uses: codecov/codecov-action@v1
