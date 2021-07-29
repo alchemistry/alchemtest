@@ -12,7 +12,7 @@ Notes
 Data Set Characteristics:
     :Number of Legs: 1 (forward mutation in water with IDWS sampling)
     :Number of Windows: 11
-    :Length of Windows: 500 fs (each window interspersed with 100 fs equilibration)
+    :Length of Windows: 50 ps (each window interspersed with 5 ps equilibration)
     :System Size: 1030 atoms
     :Temperature: 300 K
     :Pressure: 1 bar
