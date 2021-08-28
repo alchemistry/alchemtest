@@ -3,6 +3,9 @@ NAMD: free energy of tyrosine to alanine in vacuo
 
 Free energy change from mutating a Tyr into Ala in vacuo.
 Uses Interleaved Double-Wide Sampling (Hénin and Brannigan).
+Each lambda window was run separately, and NAMD was interrupted
+and restarted multiple times, such that one window may span
+multiple fepout files.
 
 Derived from NAMD FEP Tutorial, available at:
 https://www.ks.uiuc.edu/Training/Tutorials/namd/FEP/
