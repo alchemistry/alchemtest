@@ -10,7 +10,7 @@ class TestNAMD(BaseDatasetTest):
     @pytest.fixture(scope="class",
                     params = [(load_tyr2ala, ('forward', 'backward'), (1, 1)),
                               (load_idws, ('forward', ), (2,)),
-                              (load_restarted, ('both', ), (11,))
+                              (load_restarted, ('both', ), (15,))
                               ])
     def dataset(self, request):
         return super(TestNAMD, self).dataset(request)
