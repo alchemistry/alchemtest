@@ -28,3 +28,9 @@ engine. They can be accessed using the following accessor functions:
 .. include:: ../src/alchemtest/namd/idws/descr.rst
 
 .. autofunction:: alchemtest.namd.load_idws
+
+.. _namd_restarted:
+
+.. include:: ../src/alchemtest/namd/restarted/descr.rst
+
+.. autofunction:: alchemtest.namd.load_restarted
