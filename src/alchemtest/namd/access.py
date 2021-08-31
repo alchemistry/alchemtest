@@ -51,3 +51,25 @@ def load_idws():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+def load_restarted():
+    """Load the NAMD IDWS dataset.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+    data = {'both': glob(join(module_path, 'restarted', 'restarted*.fepout.bz2'))}
+
+    with open(join(module_path, 'restarted', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
