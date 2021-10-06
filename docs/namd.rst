@@ -34,3 +34,10 @@ engine. They can be accessed using the following accessor functions:
 .. include:: ../src/alchemtest/namd/restarted/descr.rst
 
 .. autofunction:: alchemtest.namd.load_restarted
+
+.. _namd_restarted_reversed:
+
+.. include:: ../src/alchemtest/namd/restarted_reversed/descr.rst
+
+.. autofunction:: alchemtest.namd.load_restarted_reversed
+
