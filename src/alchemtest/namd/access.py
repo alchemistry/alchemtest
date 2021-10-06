@@ -73,3 +73,26 @@ def load_restarted():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+
+def load_restarted_reversed():
+    """Load the NAMD IDWS dataset, run from lambda = 1 -> 0, with interruptions and restarts.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+    data = {'both': glob(join(module_path, 'restarted_reversed', 'restarted_reversed*.fepout.bz2'))}
+
+    with open(join(module_path, 'restarted_reversed', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
