@@ -21,12 +21,20 @@ class BaseDatasetTest(object):
         files.'''
         load_method, keys, value_length = dataset
         for index, key in enumerate(keys):
-            assert len(load_method().data[key]) == value_length[index]
+            if isinstance(load_method().data[key], list):
+                assert len(load_method().data[key]) == value_length[index]
+            else:
+                assert len([load_method().data[key], ]) == value_length[index]
 
     def test_file_exist(self, dataset):
         '''Test if files do exist.'''
         load_method, keys, value_length = dataset
         for key in keys:
-            for file in load_method().data[key]:
+            if isinstance(load_method().data[key], list):
+                file_list = load_method().data[key]
+            else:
+                file_list = [load_method().data[key], ]
+
+            for file in file_list:
                 if not os.path.isfile(file):
                     raise AssertionError('Missing file in data set: {}'.format(file))
