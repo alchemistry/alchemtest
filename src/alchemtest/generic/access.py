@@ -1,4 +1,4 @@
-"""Accessors for Free datasets.
+"""Accessors for generic datasets.
 
 """
 

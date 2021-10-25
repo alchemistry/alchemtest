@@ -1,4 +1,4 @@
-free: MBAR solver stability test
+generic: MBAR solver stability test
 ==============================================
 
 
