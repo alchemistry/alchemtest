@@ -1,16 +1,16 @@
-.. _free-datasets:
+.. _generic-datasets:
 
-==============
-Free datasets
-==============
+================
+Generic datasets
+================
 
-.. automodule:: alchemtest.free
+.. automodule:: alchemtest.generic
 
-The :mod:`alchemlyb.free` module features datasets that are MD engine free and
+The :mod:`alchemlyb.generic` module features datasets that are MD engine free and
 can adopt any form.
 They can be accessed using the following accessor functions:
 
-.. currentmodule:: alchemtest.free
+.. currentmodule:: alchemtest.generic
 
 .. autosummary::
 
@@ -27,7 +27,7 @@ The usage is like this ::
 
     >>> import numpy as np
     >>> from pymbar import MBAR
-    >>> from alchemtest.free import load_MBAR_BGFS
+    >>> from alchemtest.generic import load_MBAR_BGFS
     >>> u_kn = np.load(load_MBAR_BGFS()['data']['u_kn'])
     >>> N_k = np.load(load_MBAR_BGFS()['data']['N_k'])
     >>> solver_options = {"maximum_iterations":10000,"verbose":True}
@@ -44,6 +44,6 @@ Which will give the :class:`pymbar.utils.ParameterError` ::
 
 Which will work.
 
-.. include:: ../src/alchemtest/free/BFGS/descr.rst
+.. include:: ../src/alchemtest/generic/BFGS/descr.rst
 
-.. autofunction:: alchemtest.free.load_MBAR_BGFS
+.. autofunction:: alchemtest.generic.load_MBAR_BGFS
