@@ -1,4 +1,4 @@
-'''Tests for all the free dataset'''
+'''Tests for all the generic dataset'''
 import pytest
 
 from alchemtest.generic import load_MBAR_BGFS
