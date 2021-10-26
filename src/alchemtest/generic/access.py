@@ -18,11 +18,11 @@ def load_MBAR_BGFS():
     data: Bunch
         Dictionary-like object, the interesting attributes are:
 
-        - 'data' : the data files for u_kn and N_k
+        - 'data' : the data files for u_nk and N_k
 
     """
     module_path = dirname(__file__)
-    data = {'u_kn': join(module_path, 'BFGS/u_kn.npy'),
+    data = {'u_nk': join(module_path, 'BFGS/u_nk.npy'),
             'N_k': join(module_path, 'BFGS/N_k.npy'),}
 
     with open(join(module_path, 'BFGS', 'descr.rst')) as rst_file:

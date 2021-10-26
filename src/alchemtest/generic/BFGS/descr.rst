@@ -2,7 +2,7 @@ generic: MBAR solver stability test
 ==============================================
 
 
-u_kn and N_k files that could be calculated with MBAR using BGFS method but not
+u_nk and N_k files that could be calculated with MBAR using BGFS method but not
 the adaptive method.
 
 Notes
