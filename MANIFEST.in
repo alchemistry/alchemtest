@@ -1,4 +1,5 @@
 include *.rst
+include *.npy
 recursive-include src/alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out *.xvg
 include README.rst
 include LICENSE
