@@ -4,3 +4,6 @@ src/alchemtest.egg-info
 .idea
 *.DS_Store
 build
+dist/
+src/alchemtest/amber/invalidfiles/invalid-case-*.out
+

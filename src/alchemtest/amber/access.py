@@ -106,3 +106,19 @@ def load_invalidfiles():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+
+def load_single_dHdl_file():
+    """Load a single dHdl file."""
+
+    module_path = dirname(__file__)
+
+    return glob(join(module_path, 'simplesolvated/charge/0.00/ti-*.out'))
+
+
+def load_single_u_nk_file():
+    """Load a single dHdl file."""
+
+    module_path = dirname(__file__)
+
+    return glob(join(module_path, 'bace_CAT-13d~CAT-17a/solvated/vdw/0.0/ti-*.out.bz2'))
