@@ -106,3 +106,26 @@ def load_invalidfiles():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+
+def load_file_to_check(filename):
+    """Load a single file to be checked.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the requested file
+        - 'DESCR': the full description of the file
+
+    """
+
+    module_path = dirname(__file__)
+    data = join(module_path, 'files_to_check', f'{filename}.out.bz2')
+
+    with open(join(module_path, 'files_to_check', f'{filename}.descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
