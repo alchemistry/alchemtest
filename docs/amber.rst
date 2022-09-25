@@ -18,7 +18,7 @@ They can be accessed using the following accessor functions:
    load_bace_improper
    load_bace_example
    load_simplesolvated
-   load_invalidfiles
+   load_testfile
 
 
 .. _amber_bace_improper:
@@ -42,8 +42,8 @@ They can be accessed using the following accessor functions:
 .. autofunction:: alchemtest.amber.load_simplesolvated
 
 
-.. _amber_invalidfiles:
+.. _load_testfile:
 
-.. include:: ../src/alchemtest/amber/invalidfiles/descr.rst
+.. include:: ../src/alchemtest/amber/testfiles/descr.rst
 	     
-.. autofunction:: alchemtest.amber.load_invalidfiles
+.. autofunction:: alchemtest.amber.load_testfile

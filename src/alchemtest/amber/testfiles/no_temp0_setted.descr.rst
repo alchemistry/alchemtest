@@ -1,0 +1,1 @@
+File with temp0 not setted

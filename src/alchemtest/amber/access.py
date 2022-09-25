@@ -85,31 +85,8 @@ def load_simplesolvated():
                  DESCR=fdescr)
 
 
-def load_invalidfiles():
-    """Load the invalid files.
-
-    Returns
-    -------
-    data : Bunch
-        Dictionary-like object, the interesting attributes are:
-
-        - 'data' : the example of invalid data files
-        - 'DESCR': the full description of the dataset
-
-    """
-
-    module_path = dirname(__file__)
-    data = [glob(join(module_path, 'invalidfiles/*.out.bz2'))]
-
-    with open(join(module_path, 'invalidfiles', 'descr.rst')) as rst_file:
-        fdescr = rst_file.read()
-
-    return Bunch(data=data,
-                 DESCR=fdescr)
-
-
-def load_file_to_check(filename):
-    """Load a single file to be checked.
+def load_testfile(filename):
+    """Load a single file to be tested.
 
     Returns
     -------
@@ -122,9 +99,9 @@ def load_file_to_check(filename):
     """
 
     module_path = dirname(__file__)
-    data = join(module_path, 'files_to_check', f'{filename}.out.bz2')
+    data = join(module_path, 'testfiles', f'{filename}.out')
 
-    with open(join(module_path, 'files_to_check', f'{filename}.descr.rst')) as rst_file:
+    with open(join(module_path, 'testfiles', f'{filename}.descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
