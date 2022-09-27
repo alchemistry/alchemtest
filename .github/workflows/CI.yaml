@@ -27,13 +27,22 @@ jobs:
         python-version: ["2.7", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10"]
         exclude:
         - os: macOS-latest
-          python-version: 3.5   
-        - os: macOS-latest
           python-version: 3.6
         - os: macOS-latest
           python-version: 3.7
         - os: macOS-latest
           python-version: 3.8
+        - os: macOS-latest
+          python-version: 3.9
+        - os: windows-latest
+          python-version: 3.6
+        - os: windows-latest
+          python-version: 3.7
+        - os: windows-latest
+          python-version: 3.8
+        - os: windows-latest
+          python-version: 3.9
+
 
     steps:
     - uses: actions/checkout@v2
@@ -80,6 +89,7 @@ jobs:
 
 
   pypi_check:
+    name: Check source package integrity (for PyPi deployment)
     if: "github.repository == 'alchemistry/alchemtest'"
     runs-on: ubuntu-latest
 
