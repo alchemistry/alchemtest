@@ -75,8 +75,8 @@ def load_simplesolvated():
     """
 
     module_path = dirname(__file__)
-    data = {'charge': glob(join(module_path, 'simplesolvated/charge/*/ti-*.out')),
-            'vdw': glob(join(module_path, 'simplesolvated/vdw/*/ti-*.out'))}
+    data = {'charge': glob(join(module_path, 'simplesolvated/charge/*/ti-*.tar.bz2')),
+            'vdw': glob(join(module_path, 'simplesolvated/vdw/*/ti-*.tar.bz2'))}
 
     with open(join(module_path, 'simplesolvated', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
@@ -99,7 +99,7 @@ def load_testfile(filename):
     """
 
     module_path = dirname(__file__)
-    data = join(module_path, 'testfiles', f'{filename}.out')
+    data = join(module_path, 'testfiles', f'{filename}.out.tar.bz2')
 
     with open(join(module_path, 'testfiles', f'{filename}.descr.rst')) as rst_file:
         fdescr = rst_file.read()
