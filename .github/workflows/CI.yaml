@@ -79,7 +79,7 @@ jobs:
         fail_ci_if_error: true
 
 
-pypi_check:
+  pypi_check:
     if: "github.repository == 'alchemistry/alchemtest'"
     runs-on: ubuntu-latest
 
