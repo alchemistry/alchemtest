@@ -42,6 +42,13 @@ They can be accessed using the following accessor functions:
 .. autofunction:: alchemtest.amber.load_simplesolvated
 
 
+.. _amber_invalidfiles:
+
+.. include:: ../src/alchemtest/amber/invalidfiles/descr.rst
+	     
+.. autofunction:: alchemtest.amber.load_invalidfiles
+
+
 .. _load_testfile:
 
 .. include:: ../src/alchemtest/amber/testfiles/descr.rst
