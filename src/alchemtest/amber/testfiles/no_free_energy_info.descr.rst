@@ -1,1 +1,0 @@
-File without the settings regarding the free energy calculation

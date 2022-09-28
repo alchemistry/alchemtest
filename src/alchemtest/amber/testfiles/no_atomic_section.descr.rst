@@ -1,1 +1,0 @@
-File without the ATOMIC section

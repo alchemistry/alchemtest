@@ -3,6 +3,7 @@
 """
 
 from os.path import dirname, join
+from os import listdir
 from glob import glob
 
 from .. import Bunch
@@ -85,23 +86,54 @@ def load_simplesolvated():
                  DESCR=fdescr)
 
 
-def load_testfile(filename):
-    """Load a single file to be tested.
+def load_invalidfiles():
+    """Load the invalid files.
 
     Returns
     -------
     data : Bunch
         Dictionary-like object, the interesting attributes are:
 
-        - 'data' : the requested file
-        - 'DESCR': the full description of the file
+        - 'data' : the example of invalid data files
+        - 'DESCR': the full description of the dataset
+
+
+    .. deprecated:: 0.7
+        substituted by laod_testfiles
 
     """
 
     module_path = dirname(__file__)
-    data = join(module_path, 'testfiles', f'{filename}.out.tar.bz2')
+    data = [glob(join(module_path, 'invalidfiles/*.out.bz2'))]
 
-    with open(join(module_path, 'testfiles', f'{filename}.descr.rst')) as rst_file:
+    with open(join(module_path, 'invalidfiles', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
+
+def load_testfiles():
+    """Load incomplete-wrongly formatted files to be used to test the AMBER parsers.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files
+        - 'DESCR': the full description of all the files
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {}
+    for f in listdir(join(module_path, 'testfiles')):
+        if f.endswith('bz2'):
+            data[f.strip(".out.tar.bz2")] = [join(module_path, 'testfiles', f)]
+
+    with open(join(module_path, 'testfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
