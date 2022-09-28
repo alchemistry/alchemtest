@@ -99,7 +99,7 @@ def load_invalidfiles():
 
 
     .. deprecated:: 0.7
-        substituted by laod_testfiles
+       use :func:`load_testfiles` instead
 
     """
 
