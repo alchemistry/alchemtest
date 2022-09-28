@@ -131,7 +131,7 @@ def load_testfiles():
     data = {}
     for f in listdir(join(module_path, 'testfiles')):
         if f.endswith('bz2'):
-            data[f.strip(".out.tar.bz2")] = [join(module_path, 'testfiles', f)]
+            data[f[:-12]] = [join(module_path, 'testfiles', f)]
 
     with open(join(module_path, 'testfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
