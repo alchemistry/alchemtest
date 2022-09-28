@@ -17,4 +17,4 @@ Notes
 - not_finished_run.out.tar.bz2: amberoutput file from an unterminated run
 
 
-.. versionadded:: 1.0
+.. versionadded:: 0.7.0
