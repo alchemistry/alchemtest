@@ -109,15 +109,14 @@ def load_invalidfiles():
         " Use load_testfiles() instead",
         DeprecationWarning)
     module_path = dirname(__file__)
-    data = [
+    data = [[
         glob(join(module_path, 'testfiles', 'no_useful_data.out.tar.bz2'))[0],
         glob(join(module_path, 'testfiles', 'no_control_data.out.tar.bz2'))[0],
         glob(join(module_path, 'testfiles', 'no_temp0_setted.out.tar.bz2'))[0],
         glob(join(module_path, 'testfiles', 'no_free_energy_info.out.tar.bz2'))[0],
         glob(join(module_path, 'testfiles', 'no_atomic_section.out.tar.bz2'))[0],
-        glob(join(module_path, 'testfiles', 'no_results_section.out.tar.bz2'))[0]]
+        glob(join(module_path, 'testfiles', 'no_results_section.out.tar.bz2'))[0]]]
 
-    print(data)
     with open(join(module_path, 'testfiles', 'descr_invalid.rst')) as rst_file:
         fdescr = rst_file.read()
 
