@@ -110,13 +110,14 @@ def load_invalidfiles():
         DeprecationWarning)
     module_path = dirname(__file__)
     data = [
-        glob(join(module_path, 'testfiles', 'no_useful_data.out.tar.bz2')),
-        glob(join(module_path, 'testfiles', 'no_control_data.out.tar.bz2')),
-        glob(join(module_path, 'testfiles', 'no_temp0_setted.out.tar.bz2')),
-        glob(join(module_path, 'testfiles', 'no_free_energy_info.out.tar.bz2')),
-        glob(join(module_path, 'testfiles', 'no_atomic_section.out.tar.bz2')),
-        glob(join(module_path, 'testfiles', 'no_results_section.out.tar.bz2'))]
+        glob(join(module_path, 'testfiles', 'no_useful_data.out.tar.bz2'))[0],
+        glob(join(module_path, 'testfiles', 'no_control_data.out.tar.bz2'))[0],
+        glob(join(module_path, 'testfiles', 'no_temp0_setted.out.tar.bz2'))[0],
+        glob(join(module_path, 'testfiles', 'no_free_energy_info.out.tar.bz2'))[0],
+        glob(join(module_path, 'testfiles', 'no_atomic_section.out.tar.bz2'))[0],
+        glob(join(module_path, 'testfiles', 'no_results_section.out.tar.bz2'))[0]]
 
+    print(data)
     with open(join(module_path, 'testfiles', 'descr_invalid.rst')) as rst_file:
         fdescr = rst_file.read()
 
@@ -141,11 +142,11 @@ def load_testfiles():
 
     data = {}
     for f in listdir(join(module_path, 'testfiles')):
-        f = Path(f)
-        if f.suffix==".bz2":
-            while f.suffix in ('.tar', '.bz2', '.out'):
-                f = f.with_suffix('')
-            data[f.name] = [join(module_path, 'testfiles', f)]
+        f_path = Path(f)
+        if f_path.suffix==".bz2":
+            while f_path.suffix in ('.tar', '.bz2', '.out'):
+                f_path = f_path.with_suffix('')
+            data[f_path.name] = [join(module_path, 'testfiles', f)]
 
     with open(join(module_path, 'testfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()

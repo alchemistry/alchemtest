@@ -3,7 +3,8 @@ import pytest
 
 from alchemtest import Bunch
 from alchemtest.amber import (load_bace_improper, load_bace_example,
-                              load_simplesolvated, load_invalidfiles, )
+                              load_simplesolvated, load_invalidfiles, 
+                              load_testfiles, )
 
 
 
@@ -13,9 +14,24 @@ class TestAMBER(BaseDatasetTest):
     @pytest.fixture(scope="class",
                     params = [(load_bace_improper, ('vdw',), (12,)),
                               (load_simplesolvated, ('charge', 'vdw'), (5, 12)),
+                              (load_testfiles, (
+                                "no_atomic_section",
+                                "no_control_data",
+                                "no_dHdl_data_points",
+                                "no_free_energy_info",
+                                "no_results_section",
+                                "no_temp0_setted",
+                                "no_useful_data",
+                                "none_in_mbar",
+                                "not_finished_run"),
+                                (1, 1, 1, 1, 1, 1, 1, 1, 1)
+                              ),
                               ])
     def dataset(self, request):
         return super(TestAMBER, self).dataset(request)
+
+
+
 
 
 # The BACE example dataset does not conform to the standard API because it
