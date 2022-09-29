@@ -125,7 +125,7 @@ def load_invalidfiles():
 
 
 def load_testfiles():
-    """Load incomplete-wrongly formatted files to be used to test the AMBER parsers.
+    """Load incomplete or wrongly formatted files to be used to test the AMBER parsers.
 
     Returns
     -------
