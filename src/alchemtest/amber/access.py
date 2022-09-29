@@ -103,6 +103,11 @@ def load_invalidfiles():
 
     """
 
+    import warnings
+    warnings.warn(
+        "load_invalidfiles() was deprecated in 0.7.0 and will be removed in the following release."
+        " Use load_testfiles() instead",
+        DeprecationWarning)
     module_path = dirname(__file__)
     data = [
         glob(join(module_path, 'testfiles', 'no_useful_data.out.tar.bz2')),
