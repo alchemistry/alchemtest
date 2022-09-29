@@ -5,7 +5,7 @@
 from os.path import dirname, join
 from os import listdir
 from glob import glob
-
+from pathlib import Path
 from .. import Bunch
 
 
@@ -103,7 +103,7 @@ def load_invalidfiles():
 
     """
 
-    import warnings
+    import warnings  # NOTE: this import is here and not where it should be just because we'll remove this function in next version
     warnings.warn(
         "load_invalidfiles() was deprecated in 0.7.0 and will be removed in the following release."
         " Use load_testfiles() instead",
@@ -141,8 +141,11 @@ def load_testfiles():
 
     data = {}
     for f in listdir(join(module_path, 'testfiles')):
-        if f.endswith('bz2'):
-            data[f[:-12]] = [join(module_path, 'testfiles', f)]
+        f = Path(f)
+        if f.suffix==".bz2":
+            while f.suffix in ('.tar', '.bz2', '.out'):
+                f = f.with_suffix('')
+            data[f.name] = [join(module_path, 'testfiles', f)]
 
     with open(join(module_path, 'testfiles', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
