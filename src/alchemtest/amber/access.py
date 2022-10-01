@@ -139,12 +139,10 @@ def load_testfiles():
     data = {}
     for f in testfiles_path.iterdir():
         f_path = str(f)
-        #f_path = Path(f)
         if f.suffix==".bz2":
             while f.suffix in ('.tar', '.bz2', '.out'):
                 f = f.with_suffix('')
             data[f.name] = [f_path]
-    print(data)
 
     with open(testfiles_path / 'descr.rst') as rst_file:
         fdescr = rst_file.read()
