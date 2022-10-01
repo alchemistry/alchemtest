@@ -18,7 +18,7 @@ class TestBunch:
     def test_getattr_key(self, bunch):
         assert bunch["DESCR"] == "Fibonacci"
 
-    def test_getattr_key(self, bunch):
+    def test_getattr_dot(self, bunch):
         assert bunch.DESCR == "Fibonacci"
 
     def test_setattr_key(self, bunch):
