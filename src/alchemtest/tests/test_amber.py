@@ -31,9 +31,6 @@ class TestAMBER(BaseDatasetTest):
         return super(TestAMBER, self).dataset(request)
 
 
-
-
-
 # The BACE example dataset does not conform to the standard API because it
 # contains sub dicts under 'complex'/'solvated' -> 'decharge', 'recharge',
 # 'vdw' instead of lists of files. In order to use the same testing base class,

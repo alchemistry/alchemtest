@@ -2,7 +2,6 @@
 
 """
 
-from os import listdir
 from pathlib import Path
 from .. import Bunch
 
@@ -135,17 +134,19 @@ def load_testfiles():
 
     """
 
-    module_path = Path(__file__).parent
+    testfiles_path = Path(__file__).parent / 'testfiles'
 
     data = {}
-    for f in listdir(module_path / 'testfiles'):
-        f_path = Path(f)
-        if f_path.suffix==".bz2":
-            while f_path.suffix in ('.tar', '.bz2', '.out'):
-                f_path = f_path.with_suffix('')
-            data[f_path.name] = [module_path / 'testfiles' / f]
+    for f in testfiles_path.iterdir():
+        f_path = str(f)
+        #f_path = Path(f)
+        if f.suffix==".bz2":
+            while f.suffix in ('.tar', '.bz2', '.out'):
+                f = f.with_suffix('')
+            data[f.name] = [f_path]
+    print(data)
 
-    with open(module_path / 'testfiles' / 'descr.rst') as rst_file:
+    with open(testfiles_path / 'descr.rst') as rst_file:
         fdescr = rst_file.read()
 
     return Bunch(data=data,
