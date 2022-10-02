@@ -139,8 +139,9 @@ def load_testfiles():
     data = {}
     for f in testfiles_path.iterdir():
         f_path = str(f)
-        if f.suffix==".bz2":
-            while f.suffix in ('.tar', '.bz2', '.out'):
+        suffixes = (".out", ".tar", ".bz2")
+        if f.suffix in suffixes:
+            while f.suffix in suffixes:
                 f = f.with_suffix('')
             data[f.name] = [f_path]
 
