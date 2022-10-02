@@ -31,6 +31,14 @@ suite it may contain bugs. Please raise any issues or questions in the
    new data set and we will help you with the process of adding it to
    **alchemtest**.
 
+   With release 0.7.0, the alchemlyb project adopted `NEP 29`_ to determine
+   which versions of Python and NumPy_ will be supported. When we release a new
+   major or minor version, alchemtest will support *at least all minor versions
+   of Python introduced and released in the prior 42 months from the release
+   date with a minimum of 2 minor versions of Python*, and *all minor versions
+   of NumPy released in the prior 24 months from the anticipated release date
+   with a minimum of 3 minor versions of NumPy*.
+
 .. |doi| image:: https://zenodo.org/badge/83470847.svg
     :alt: Zenodo DOI
     :scale: 100%
@@ -45,7 +53,8 @@ suite it may contain bugs. Please raise any issues or questions in the
 .. _`semantic versioning`: https://semver.org   
 .. _`Issue Tracker`:
    https://github.com/alchemistry/alchemtest/issues
-   
+.. _`NEP 29`: https://numpy.org/neps/nep-0029-deprecation_policy.html
+.. _NumPy: https://numpy.org
 
 .. toctree::
     :maxdepth: 1
