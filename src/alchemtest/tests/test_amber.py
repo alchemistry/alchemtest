@@ -20,7 +20,7 @@ class TestAMBER(BaseDatasetTest):
                                 "no_dHdl_data_points",
                                 "no_free_energy_info",
                                 "no_results_section",
-                                "no_temp0_setted",
+                                "no_temp0_set",
                                 "no_useful_data",
                                 "none_in_mbar",
                                 "not_finished_run"),

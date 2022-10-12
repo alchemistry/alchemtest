@@ -1,7 +1,7 @@
 """Accessors for Amber TI datasets.
 
 """
-
+import warnings
 from pathlib import Path
 from .. import Bunch
 
@@ -100,7 +100,6 @@ def load_invalidfiles():
 
     """
 
-    import warnings  # NOTE: this import is here and not where it should be just because we'll remove this function in next version
     warnings.warn(
         "load_invalidfiles() was deprecated in 0.7.0 and will be removed in the following release."
         " Use load_testfiles() instead",
@@ -109,7 +108,7 @@ def load_invalidfiles():
     data = [[
         module_path / 'testfiles' / 'no_useful_data.out.tar.bz2',
         module_path / 'testfiles' / 'no_control_data.out.tar.bz2',
-        module_path / 'testfiles' / 'no_temp0_setted.out.tar.bz2',
+        module_path / 'testfiles' / 'no_temp0_set.out.tar.bz2',
         module_path / 'testfiles' / 'no_free_energy_info.out.tar.bz2',
         module_path / 'testfiles' / 'no_atomic_section.out.tar.bz2',
         module_path / 'testfiles' / 'no_results_section.out.tar.bz2']]
@@ -136,14 +135,17 @@ def load_testfiles():
 
     testfiles_path = Path(__file__).parent / 'testfiles'
 
-    data = {}
-    for f in testfiles_path.iterdir():
-        f_path = str(f)
-        suffixes = (".out", ".tar", ".bz2")
-        if f.suffix in suffixes:
-            while f.suffix in suffixes:
-                f = f.with_suffix('')
-            data[f.name] = [f_path]
+    data = {
+        "not_finished_run": [testfiles_path / "not_finished_run.out.tar.bz2"],
+        "none_in_mbar": [testfiles_path / "none_in_mbar.out.tar.bz2"],
+        "no_useful_data": [testfiles_path / "no_useful_data.out.tar.bz2"],
+        "no_temp0_set": [testfiles_path / "no_temp0_set.out.tar.bz2"],
+        "no_results_section": [testfiles_path / "no_results_section.out.tar.bz2"],
+        "no_free_energy_info": [testfiles_path / "no_free_energy_info.out.tar.bz2"],
+        "no_dHdl_data_points": [testfiles_path / "no_dHdl_data_points.out.tar.bz2"],
+        "no_control_data": [testfiles_path / "no_control_data.out.tar.bz2"],
+        "no_atomic_section": [testfiles_path / "no_atomic_section.out.tar.bz2"],
+        }
 
     with open(testfiles_path / 'descr.rst') as rst_file:
         fdescr = rst_file.read()
