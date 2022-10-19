@@ -23,19 +23,25 @@ files that are typical of how the specific code is run.
 .. _`alchemtest/gmx/benzene`:
    https://github.com/alchemistry/alchemtest/tree/master/src/alchemtest/gmx/benzene
 
-Documentation
--------------
+Data set description
+--------------------
 
-Add
+For your data set, you should be able to include the following in a 
+brief description (which will become part of the data set and the
+documentation as described in more detail in :ref:`process`):
 
-* a brief explanation of how you would analyze the data with alchemlyb
-  or your own tool (show Python commands or the full command with
-  options so that we can reproduce) and
-* the value(s) that you get so that we know the ground truth. 
-
-Comment on what to look out for in the output files (knowing what is
-what in the files helps). If you have *links to where the format is
-defined*, please let us know.
+* Include the value(s) that you get when analyzing the data set 
+  yourself so that we know the ground truth. 
+  
+  It is very helpful if you include a brief explanation of how you 
+  analyze the data with alchemlyb or your own tool (show Python commands 
+  or the full command with options so that one can reproduce the 
+  analysis if necessary).  
+* State how the data set was generated. Include the temperature.
+* Comment on what to look out for in the output files, e.g., special
+  sampling options. 
+* For **new file formats:** Include information about the file format
+  definition, such as *links* or *paper citations*.
 
 In general, follow the example of the existing data sets (especially
 similar data sets or for the same MD/MC code) and discuss the specfics
@@ -107,7 +113,7 @@ Process
      description text is added the *DESCR* key.
 
      Again, copy an existing function and modify.     
-   * Add an ``from .access import load load_MYDATASET`` to the
+   * Add an ``from .access import load_MYDATASET`` to the
      top-level :file:`__init__.py` to make your accessor function
      part of alchemtest.     
 4. Locally test that you can load your dataset::
