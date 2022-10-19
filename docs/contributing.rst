@@ -142,11 +142,19 @@ Process
 
 5. Create a `Pull Request`_ with your new code and files.
 
-6. Engage in the code review — we might have questions, suggestions,
+6. Add a *test* that checks that your files can be found. Look in the
+   :file:`src/alchemtest/tests` directory and follow the examples that
+   are already there.
+   We are also happy to help you with this step — just ask.
+   
+   You can run the tests locally with `pytest` and you will also see
+   that the tests are run on your PR.
+
+7. Engage in the code review — we might have questions, suggestions,
    and requests for revisions to ensure that your contribution fits
    into the library.
    
-7. Once your PR is accepted it will be merged by a developer and your
+8. Once your PR is accepted it will be merged by a developer and your
    dataset is part of **alchemtest** — Congratulations!
    
 
