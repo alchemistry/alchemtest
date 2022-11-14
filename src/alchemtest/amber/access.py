@@ -146,6 +146,8 @@ def load_testfiles():
         "no_control_data": [testfiles_path / "no_control_data.out.bz2"],
         "no_atomic_section": [testfiles_path / "no_atomic_section.out.bz2"],
         "high_and_wrong_number_of_mbar_windows": [testfiles_path / "high_and_wrong_number_of_mbar_windows.out.bz2"],
+        "no_spaces_around_equal": [testfiles_path / "no_spaces_around_equal.out.bz2"],
+        "no_starting_simulation_time": [testfiles_path / "no_starting_simulation_time.out.bz2"],
         }
 
     with open(testfiles_path / 'descr.rst') as rst_file:

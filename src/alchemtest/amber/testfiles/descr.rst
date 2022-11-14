@@ -15,6 +15,8 @@ Notes
 - no_useful_data.out.bz2: AMBER output file without useful data, truncated after the header
 - none_in_mbar.out.bz2: AMBER output file with a wrongly formatted MBAR section. Specifically, a lambda value in a MBAR section has been altered, so it dowsn't match with the other MBAR sections and the expected lambda values (0.2500 --> 0.2550)
 - not_finished_run.out.bz2: AMBER output file from an unterminated run
-- high_number_of_mbar_windows.out.bz2: AMBER output file from  a run with high number of MBAR lambdas
+- high_number_of_mbar_windows.out.bz2: AMBER output file from a run with high number of MBAR lambdas
+- no_spaces_around_equal.out.bz2: AMBER output file where there are no spaces around the '=' sign in the ' begin time read from' section
+- no_starting_simulation_time.out.bz2: AMBER output file where the starting simulation time is not read
 
 .. versionadded:: 0.7.0
