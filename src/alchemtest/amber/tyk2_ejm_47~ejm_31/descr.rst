@@ -38,7 +38,7 @@ molecular dynamics engine.
               137(7):2695–2703, 2015. PMID: 25625324. DOI:
 	      `10.1021/ja512751q <https://doi.org/10.1021/ja512751q>`_.
 
-.. [Lee2020a] Lee, T.-S.; Lin, Z.; Allen, B. K.; Lin, C.; Radak, B. K.; Tao, Y.; Tsai, H.-C.; Sherman, W.; York, D. M.
+.. [Lee2020a] T.-S. Lee, Z. Lin, B. K. Allen, C. Lin, B. K. Radak, Y. Tao, H.-C. Tsai, W. Sherman, D. M. York, 
               Improved Alchemical Free Energy Calculations with Optimized Smoothstep Softcore Potentials.
               Journal of Chemical Theory and Computation,
               16(9):5512–5525, 2020. PMID: 32672455. DOI:
