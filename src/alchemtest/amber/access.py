@@ -58,6 +58,27 @@ def load_bace_example():
     return Bunch(data=data,
                  DESCR=fdescr)
 
+def load_tyk2_example():
+    """Load Amber TYK2 example perturbation.
+
+    Returns
+    -------
+    data: Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by system and alchemical leg
+
+    """
+    module_path = Path(__file__).parent
+    data = {'complex': list(map(str, module_path.glob('tyk2_ejm_47~ejm_31/complex/*/ti-*.out.bz2'))),
+            'solvated': list(map(str, module_path.glob('tyk2_ejm_47~ejm_31/solvated/*/ti-*.out.bz2')))
+            }
+
+    with open(module_path / 'tyk2_ejm_47~ejm_31' / 'descr.rst') as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
 
 def load_simplesolvated():
     """Load the Amber solvated dataset.
