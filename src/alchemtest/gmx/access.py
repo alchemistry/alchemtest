@@ -31,6 +31,30 @@ def load_benzene():
     return Bunch(data=data,
                  DESCR=fdescr)
 
+def load_ethanol():
+    """Load the Gromacs ethanol dataset.
+
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files by alchemical leg
+        - 'DESCR': the full description of the dataset
+
+    """
+
+    module_path = dirname(__file__)
+
+    data = {'Coulomb': sorted(glob(join(module_path, 'ethanol', 'Coulomb', '*', 'dhdl.xvg.bz2'))),
+            'VDW': sorted(glob(join(module_path, 'ethanol', 'VDW', '*', 'dhdl.xvg.bz2')))}
+
+    with open(join(module_path, 'ethanol', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
+
 def load_ABFE():
     """Load the Gromacs ABFE dataset.
 
