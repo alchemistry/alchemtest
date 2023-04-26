@@ -4,7 +4,7 @@ import pytest
 from alchemtest import Bunch
 from alchemtest.amber import (load_bace_improper, load_bace_example,
                               load_simplesolvated, load_invalidfiles, 
-                              load_testfiles, )
+                              load_testfiles, load_tyk2_example)
 
 
 
@@ -65,6 +65,26 @@ class TestBACEexample(BaseDatasetTest):
                     ])
     def dataset(self, request):
         return super(TestBACEexample, self).dataset(request)
+
+
+# test tyk2 example
+def _load_tyk2_example():
+    dset = load_tyk2_example()
+    return Bunch(data=dset.data,
+                 DESCR="TYK2 example:")
+
+class TestTYK2example(BaseDatasetTest):
+    # use pytest.param to add the id for nicer pytest -v output
+    @pytest.fixture(scope="class",
+                    params = [
+                        pytest.param(
+                            (_load_tyk2_example,
+                             ('complex', 'solvated'),
+                             (12, 12)),
+                            id="tyk2"),
+                    ])
+    def dataset(self, request):
+        return super(TestTYK2example, self).dataset(request)
 
 
 # The invalidfiles dataset does not conform to the API. load_invalidfiles()
