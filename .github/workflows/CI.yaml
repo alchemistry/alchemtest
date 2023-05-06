@@ -75,6 +75,7 @@ jobs:
     - name: CodeCov
       uses: codecov/codecov-action@v2
       with:
+        token: ${{ secrets.CODECOV_TOKEN }}
         name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}      
         file: ./coverage.xml
         flags: unittests
