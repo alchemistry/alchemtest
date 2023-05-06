@@ -73,7 +73,8 @@ jobs:
         pytest -v --cov=alchemtest --cov-report=xml --color=yes src/alchemtest/tests
 
     - name: CodeCov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v3
+      token: ${{ secrets.CODECOV }}
       with:
         name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}      
         file: ./coverage.xml
