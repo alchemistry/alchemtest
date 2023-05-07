@@ -24,18 +24,18 @@ jobs:
     strategy:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
-        python-version: ["3.7", "3.8", "3.9", "3.10"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
         # Only test lowest and highest version on the expensive/slow
         # macOS and windows runners (UPDATE when supported versions change):
         exclude:
         - os: macOS-latest
           python-version: 3.8
         - os: macOS-latest
-          python-version: 3.9
+          python-version: 3.11
         - os: windows-latest
           python-version: 3.8
         - os: windows-latest
-          python-version: 3.9
+          python-version: 3.11
 
     steps:
     - uses: actions/checkout@v2
@@ -73,8 +73,9 @@ jobs:
         pytest -v --cov=alchemtest --cov-report=xml --color=yes src/alchemtest/tests
 
     - name: CodeCov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v3
       with:
+        token: ${{ secrets.CODECOV_TOKEN }}
         name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}      
         file: ./coverage.xml
         flags: unittests
