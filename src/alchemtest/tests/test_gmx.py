@@ -17,7 +17,7 @@ class TestGROMACS(BaseDatasetTest):
     @pytest.fixture(scope="class",
                     params = [(load_benzene, ('Coulomb', 'VDW'), (5, 16)),
                               (load_ABFE, ('complex', 'ligand'), (30, 20)),
-                              (load_ethanol, ('Coulomb', 'VDW'), (5, 7)),
+                              (load_ethanol, ('Coulomb', 'VDW'), (14, 13)),
                               (load_expanded_ensemble_case_1, ('AllStates', ), (1,)),
                               (load_expanded_ensemble_case_2, ('AllStates', ), (2,)),
                               (load_expanded_ensemble_case_3, ('AllStates', ), (32,)),
