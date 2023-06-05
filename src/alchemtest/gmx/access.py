@@ -46,8 +46,8 @@ def load_ethanol():
 
     module_path = dirname(__file__)
 
-    data = {'Coulomb': sorted(glob(join(module_path, 'ethanol', 'Coulomb', '*', 'dhdl.xvg.bz2'))),
-            'VDW': sorted(glob(join(module_path, 'ethanol', 'VDW', '*', 'dhdl.xvg.bz2')))}
+    data = {'Coulomb': sorted(glob(join(module_path, 'ethanol', 'Coulomb', 'dhdl.*.xvg.bz2'))),
+            'VDW': sorted(glob(join(module_path, 'ethanol', 'VDW', 'dhdl.*.xvg.bz2')))}
 
     with open(join(module_path, 'ethanol', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()

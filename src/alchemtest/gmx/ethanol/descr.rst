@@ -7,7 +7,7 @@ Notes
 -----
 Data Set Characteristics:
     :Number of Legs: 2 (Coulomb, VDW)
-    :Number of Windows: 5 for Coulomb, 7 for VDW (at suggested gaussian quadrature points)
+    :Number of Windows: 14 for Coulomb, 13 for VDW
     :Length of Windows: 6ns
     :System Size: 2694 atoms
     :Temperature: 300 K
