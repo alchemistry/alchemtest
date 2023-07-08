@@ -3,7 +3,7 @@
 """
 
 from .access import load_benzene
-from .access import (load_benzene, load_ABFE,
+from .access import (load_benzene, load_ethanol, load_ABFE,
                      load_expanded_ensemble_case_1,
                      load_expanded_ensemble_case_2,
                      load_expanded_ensemble_case_3,
