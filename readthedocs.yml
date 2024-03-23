@@ -12,5 +12,3 @@ sphinx:
 formats:
   - pdf
 
-conda:
-    environment: devtools/conda-envs/test_env.yaml
