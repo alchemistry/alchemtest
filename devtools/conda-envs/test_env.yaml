@@ -17,6 +17,7 @@ dependencies:
   - wheel
   - pytest-pep8
   - build
+  - sphinx
 
     # Pip-only installs
   #- pip:
