@@ -44,6 +44,6 @@ Which will give the :class:`pymbar.utils.ParameterError` ::
 
 Which will work.
 
-.. include:: ../src/alchemtest/generic/BFGS/descr.rst
+.. include:: ../alchemtest/generic/BFGS/descr.rst
 
 .. autofunction:: alchemtest.generic.load_MBAR_BGFS
