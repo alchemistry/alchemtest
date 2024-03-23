@@ -108,4 +108,4 @@ ENV/
 # In-tree generated files
 */_version.py
 */.DS_Store
-*/.idea
+*/.idea/
