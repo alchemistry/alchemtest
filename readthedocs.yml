@@ -12,10 +12,5 @@ sphinx:
 formats:
   - pdf
 
-python:
-  install:
-    - method: pip
-      path: .
-
 conda:
     environment: devtools/conda-envs/test_env.yaml
