@@ -10,9 +10,7 @@ description = "The simple alchemistry test set."
 dynamic = ["version"]
 readme = "README.md"
 authors = [
-    { name = "David Dotson", email = "dotsdl@gmail.com" }
-]
-maintainer =[
+    { name = "David Dotson", email = "dotsdl@gmail.com" },
     { name = "Oliver Beckstein", email = "orbeckst@gmail.com" },
     { name = "Zhiyi Wu", email = "william@zhiyiwu.me" }
 ]
