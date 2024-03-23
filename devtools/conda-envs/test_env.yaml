@@ -17,7 +17,10 @@ dependencies:
   - wheel
   - pytest-pep8
   - build
+
+  # Doc
   - sphinx
+  - sphinx_rtd_theme
 
     # Pip-only installs
   #- pip:
