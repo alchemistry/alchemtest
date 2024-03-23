@@ -14,6 +14,10 @@ dependencies:
   - pytest-cov
   - codecov
 
+  - wheel
+  - pytest-pep8
+  - build
+
     # Pip-only installs
   #- pip:
   #  - codecov

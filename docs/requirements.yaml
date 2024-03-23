@@ -1,0 +1,13 @@
+name: docs
+channels:
+dependencies:
+    # Base depends
+  - python
+  - pip
+  - sphinx
+
+
+
+    # Pip-only installs
+  #- pip:
+

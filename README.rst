@@ -28,7 +28,7 @@ modification, separation, for any purpose and without a charge.
     :alt: Zenodo DOI
     :scale: 100%
     :target: https://zenodo.org/badge/latestdoi/83470847
-	     
+
 .. |build| image:: https://github.com/alchemistry/alchemtest/actions/workflows/CI.yaml/badge.svg?branch=master
     :alt: Build Status
     :scale: 100%
