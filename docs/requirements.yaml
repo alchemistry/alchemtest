@@ -4,10 +4,6 @@ dependencies:
     # Base depends
   - python
   - pip
+  # Doc
   - sphinx
-
-
-
-    # Pip-only installs
-  #- pip:
-
+  - sphinx_rtd_theme

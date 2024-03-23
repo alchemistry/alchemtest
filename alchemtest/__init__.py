@@ -1,9 +1,5 @@
 """The simple alchemistry test set."""
 
-# Add imports here
-from .alchemtest import *
-
-
 from ._version import __version__
 
 class Bunch(dict):
