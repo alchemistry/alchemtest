@@ -8,7 +8,7 @@ on:
       - "main"
   pull_request:
     branches:
-      - "main"
+      - "master"
   schedule:
     # Weekly tests run on main by default:
     #   Scheduled workflows run on the latest commit on the default or base branch.
