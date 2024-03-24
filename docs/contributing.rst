@@ -21,7 +21,7 @@ directory layout in `alchemtest/gmx/benzene`_) but you should provide
 files that are typical of how the specific code is run.
 
 .. _`alchemtest/gmx/benzene`:
-   https://github.com/alchemistry/alchemtest/tree/master/src/alchemtest/gmx/benzene
+   https://github.com/alchemistry/alchemtest/tree/master/alchemtest/gmx/benzene
 
 Data set description
 --------------------
@@ -91,7 +91,7 @@ Process
 
        .. code-block:: bash
 
-          recursive-include src/alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out *.xvg
+          recursive-include alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out *.xvg
 
        will include your files into the package: If your filename
        extension(s) are not matched, add them.
@@ -143,7 +143,7 @@ Process
 5. Create a `Pull Request`_ with your new code and files.
 
 6. Add a *test* that checks that your files can be found. Look in the
-   :file:`src/alchemtest/tests` directory and follow the examples that
+   :file:`alchemtest/tests` directory and follow the examples that
    are already there.
    We are also happy to help you with this step — just ask.
    
@@ -164,10 +164,10 @@ Process
    https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
 
 .. _`alchemtest/gmx`:   
-   https://github.com/alchemistry/alchemtest/tree/master/src/alchemtest/gmx
+   https://github.com/alchemistry/alchemtest/tree/master/alchemtest/gmx
 
 .. _`alchemtest/namd`:
-   https://github.com/alchemistry/alchemtest/tree/master/src/alchemtest/namd
+   https://github.com/alchemistry/alchemtest/tree/master/alchemtest/namd
 
 .. _`restructured text (reST)`:
    https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html

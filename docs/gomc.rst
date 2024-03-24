@@ -27,6 +27,6 @@ were run independently.
 
 
 .. _gomc_benzene:
-.. include:: ../src/alchemtest/gomc/benzene/descr.rst
+.. include:: ../alchemtest/gomc/benzene/descr.rst
 
 .. autofunction:: alchemtest.gomc.load_benzene

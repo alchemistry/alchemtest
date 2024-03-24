@@ -50,7 +50,7 @@ suite it may contain bugs. Please raise any issues or questions in the
 .. _`Open Definition 2.1`: http://opendefinition.org/od/2.1/en/
 .. _`alchemistry/alchemtest`:
    https://github.com/alchemistry/alchemtest
-.. _`semantic versioning`: https://semver.org   
+.. _`semantic versioning`: https://semver.org
 .. _`Issue Tracker`:
    https://github.com/alchemistry/alchemtest/issues
 .. _`NEP 29`: https://numpy.org/neps/nep-0029-deprecation_policy.html
@@ -74,4 +74,4 @@ suite it may contain bugs. Please raise any issues or questions in the
     namd
     gomc
     generic
- 
+

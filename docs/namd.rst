@@ -19,25 +19,25 @@ engine. They can be accessed using the following accessor functions:
 
 .. _namd_tyr2ala:
 
-.. include:: ../src/alchemtest/namd/tyr2ala/descr.rst
+.. include:: ../alchemtest/namd/tyr2ala/descr.rst
 
 .. autofunction:: alchemtest.namd.load_tyr2ala
 
 .. _namd_idws:
 
-.. include:: ../src/alchemtest/namd/idws/descr.rst
+.. include:: ../alchemtest/namd/idws/descr.rst
 
 .. autofunction:: alchemtest.namd.load_idws
 
 .. _namd_restarted:
 
-.. include:: ../src/alchemtest/namd/restarted/descr.rst
+.. include:: ../alchemtest/namd/restarted/descr.rst
 
 .. autofunction:: alchemtest.namd.load_restarted
 
 .. _namd_restarted_reversed:
 
-.. include:: ../src/alchemtest/namd/restarted_reversed/descr.rst
+.. include:: ../alchemtest/namd/restarted_reversed/descr.rst
 
 .. autofunction:: alchemtest.namd.load_restarted_reversed
 

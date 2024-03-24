@@ -2,9 +2,9 @@
 branch = True
 omit =
     # omit all tests
-    src/alchemtest/tests/*
+    alchemtest/tests/*
     # omit the versioneer-installed _version.py
-    src/alchemtest/_version.py
+    alchemtest/_version.py
 
 [report]
 exclude_lines =

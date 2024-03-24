@@ -1,7 +1,6 @@
+"""The simple alchemistry test set."""
 
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions
+from ._version import __version__
 
 class Bunch(dict):
     """Container object for datasets

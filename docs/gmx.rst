@@ -34,7 +34,7 @@ were run independently.
 
 
 .. _gmx_benzene:
-.. include:: ../src/alchemtest/gmx/benzene/descr.rst
+.. include:: ../alchemtest/gmx/benzene/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_benzene
 
@@ -47,17 +47,17 @@ Data for *extended ensemble* simulations; case 1 and case 2 are
 extended ensembles in the alchemical parameters, case 3 includes
 replica exchange (REX).
 
-.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_1/descr.rst
+.. include:: ../alchemtest/gmx/expanded_ensemble/case_1/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_1
 
 		  
-.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_2/descr.rst
+.. include:: ../alchemtest/gmx/expanded_ensemble/case_2/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_2
 
 		  
-.. include:: ../src/alchemtest/gmx/expanded_ensemble/case_3/descr.rst
+.. include:: ../alchemtest/gmx/expanded_ensemble/case_3/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_expanded_ensemble_case_3
    
@@ -72,7 +72,7 @@ contains a total energy column, one contains a potential energy column and
 one does not contain a energy column.
 
 .. _gmx_water_particle:
-.. include:: ../src/alchemtest/gmx/water_particle/descr.rst
+.. include:: ../alchemtest/gmx/water_particle/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_water_particle_with_total_energy
 .. autofunction:: alchemtest.gmx.load_water_particle_with_potential_energy
@@ -90,6 +90,6 @@ In the ligand leg, only the coulombic and Van der Waals interactions are
 decoupled.
 
 
-.. include:: ../src/alchemtest/gmx/ABFE/descr.rst
+.. include:: ../alchemtest/gmx/ABFE/descr.rst
 
 .. autofunction:: alchemtest.gmx.load_ABFE
