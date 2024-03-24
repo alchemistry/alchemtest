@@ -4,7 +4,7 @@ omit =
     # omit all tests
     alchemtest/tests/*
     # omit the versioneer-installed _version.py
-    src/alchemtest/_version.py
+    alchemtest/_version.py
 
 [report]
 exclude_lines =
