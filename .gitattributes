@@ -1,1 +1,1 @@
-src/alchemtest/_version.py export-subst
+alchemtest/_version.py export-subst

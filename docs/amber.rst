@@ -24,34 +24,34 @@ They can be accessed using the following accessor functions:
 
 .. _amber_bace_improper:
 
-.. include:: ../src/alchemtest/amber/bace_improper/descr.rst
+.. include:: ../alchemtest/amber/bace_improper/descr.rst
 
 .. autofunction:: alchemtest.amber.load_bace_improper
 
 
 .. _amber_bace_example:
 
-.. include:: ../src/alchemtest/amber/bace_CAT-13d~CAT-17a/descr.rst
+.. include:: ../alchemtest/amber/bace_CAT-13d~CAT-17a/descr.rst
 
 .. autofunction:: alchemtest.amber.load_bace_example
 
 
 .. _amber_simplesolvated:
 
-.. include:: ../src/alchemtest/amber/simplesolvated/descr.rst
+.. include:: ../alchemtest/amber/simplesolvated/descr.rst
 
 .. autofunction:: alchemtest.amber.load_simplesolvated
 
 
 .. _amber_invalidfiles:
 
-.. include:: ../src/alchemtest/amber/testfiles/descr_invalid.rst
+.. include:: ../alchemtest/amber/testfiles/descr_invalid.rst
 	     
 .. autofunction:: alchemtest.amber.load_invalidfiles
 
 
 .. _load_testfiles:
 
-.. include:: ../src/alchemtest/amber/testfiles/descr.rst
+.. include:: ../alchemtest/amber/testfiles/descr.rst
 	     
 .. autofunction:: alchemtest.amber.load_testfiles
