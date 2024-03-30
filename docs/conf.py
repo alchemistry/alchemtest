@@ -23,8 +23,7 @@ import alchemtest
 # -- Project information -----------------------------------------------------
 
 project = 'alchemtest'
-copyright = ("2017-2024, The Alchemtest Authors. Project structure based on the "
-             "Computational Molecular Science Python Cookiecutter version 1.1")
+copyright = ("2017-2024, The Alchemtest Authors.")
 author = 'The Alchemtest Authors'
 
 from alchemtest._version import __version__
@@ -144,7 +143,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'alchemtest.tex', 'alchemtest Documentation',
-     'alchemtest', 'manual'),
+     author, 'manual'),
 ]
 
 
