@@ -40,13 +40,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Additional info about the build
-        shell: bash
-        run: |
-          uname -a
-          df -h
-          ulimit -a
-
       # More info on options: https://github.com/marketplace/actions/provision-with-micromamba
       - uses: mamba-org/provision-with-micromamba@main
         with:

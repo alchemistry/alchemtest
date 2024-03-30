@@ -23,14 +23,13 @@ import alchemtest
 # -- Project information -----------------------------------------------------
 
 project = 'alchemtest'
-copyright = ("2024, David Dotson, Zhiyi Wu. Project structure based on the "
+copyright = ("2017-2024, The Alchemtest Authors. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.1")
-author = 'David Dotson, Zhiyi Wu'
+author = 'The Alchemtest Authors'
 
-# The short X.Y version
-version = ''
-# The full version, including alpha/beta/rc tags
-release = ''
+from alchemtest._version import __version__
+release = __version__
+version = release
 
 
 # -- General configuration ---------------------------------------------------
