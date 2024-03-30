@@ -3,6 +3,11 @@
 We welcome contributions from external contributors, and this document
 describes how to merge code changes into this alchemtest. 
 
+If you want to **contribute a new test files** then please also read the
+ [Contributing new data sets](https://alchemtest.readthedocs.io/en/latest/contributing.html)
+chapter in the documentation.
+
+
 ## Getting Started
 
 * Make sure you have a [GitHub account](https://github.com/signup/free).
