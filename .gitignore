@@ -107,5 +107,5 @@ ENV/
 
 # In-tree generated files
 */_version.py
-*/.DS_Store
+*.DS_Store
 */.idea/
