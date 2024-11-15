@@ -1,17 +1,36 @@
-'''Tests for all the NAMD datasets'''
+'''Tests for all the LAMMPS datasets'''
 import pytest
 
-from alchemtest.namd import load_tyr2ala, load_idws, load_restarted, load_restarted_reversed
+from alchemtest import Bunch
+from alchemtest.lammps import load_benzene
 
 from . import BaseDatasetTest
 
+# fake access to conform to expected API
+def _load_benzene_mbar():
+    dset = load_benzene()
+    return Bunch(data=dset.data['mbar'],
+                 DESCR="Benzene example: mbar")
 
-class TestNAMD(BaseDatasetTest):
+def _load_benzene_ti():
+    dset = load_benzene()
+    return Bunch(data=dset.data['ti'],
+                 DESCR="Benzene example: ti")
+class TestLAMMPS(BaseDatasetTest):
     @pytest.fixture(scope="class",
-                    params = [(load_tyr2ala, ('forward', 'backward'), (1, 1)),
-                              (load_idws, ('forward', ), (2,)),
-                              (load_restarted, ('both', ), (15,)),
-                              (load_restarted_reversed, ('both', ), (19,))
-                              ])
+                    params = [
+                        pytest.param(
+                            (_load_benzene_mbar,
+                             ('1_coul-off', '2_vdw', '3_coul-on'),
+                             (36, 256, 36)),
+                            id="complex"
+                        ),
+                        pytest.param(
+                            (_load_benzene_ti,
+                             ('1_coul-off', '2_vdw', '3_coul-on'),
+                             (6, 16, 6)),
+                            id="complex"
+                        ),
+                    ])
     def dataset(self, request):
-        return super(TestNAMD, self).dataset(request)
+        return super(TestLAMMPS, self).dataset(request)

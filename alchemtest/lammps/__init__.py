@@ -2,4 +2,4 @@
 
 """
 
-from .access import load_MBAR_ljdimer
+from .access import load_benzene
