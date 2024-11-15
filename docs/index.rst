@@ -71,7 +71,9 @@ suite it may contain bugs. Please raise any issues or questions in the
 
     gmx
     amber
-    namd
+    gmx
     gomc
+    lammps
+    namd
     generic
 

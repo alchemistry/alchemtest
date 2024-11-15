@@ -166,6 +166,9 @@ Process
 .. _`alchemtest/gmx`:   
    https://github.com/alchemistry/alchemtest/tree/master/alchemtest/gmx
 
+.. _`alchemtest/lammps`:
+   https://github.com/alchemistry/alchemtest/tree/master/alchemtest/lammps
+
 .. _`alchemtest/namd`:
    https://github.com/alchemistry/alchemtest/tree/master/alchemtest/namd
 
