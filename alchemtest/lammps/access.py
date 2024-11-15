@@ -17,17 +17,17 @@ def load_benzene():
 
         - 'data' : the data files from lammps dump output
         
-        * "mbar": Files formatted for BAR or MBAR
-        
-            * '1_coul-off': NPT removal of benzene's charges
-            * '2_vdw': NPT decoupling of vdw forces between benzene and water
-            * '3_coul-on': NVT in vacuum restoration of benzene's charges
+            * "mbar": Files formatted for BAR or MBAR
             
-        * "ti"
-        
-            * '1_coul-off': NPT removal of benzene's charges
-            * '2_vdw': NPT decoupling of vdw forces between benzene and water
-            * '3_coul-on': NVT in vacuum restoration of benzene's charges
+                * '1_coul-off': NPT removal of benzene's charges
+                * '2_vdw': NPT decoupling of vdw forces between benzene and water
+                * '3_coul-on': NVT in vacuum restoration of benzene's charges
+                
+            * "ti"
+            
+                * '1_coul-off': NPT removal of benzene's charges
+                * '2_vdw': NPT decoupling of vdw forces between benzene and water
+                * '3_coul-on': NVT in vacuum restoration of benzene's charges
         
         - 'DESCR': the full description of the dataset
 

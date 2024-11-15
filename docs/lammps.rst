@@ -1,7 +1,7 @@
 .. _lammps-datasets:
 
 ================
-LAMMPS Datasets
+LAMMPS datasets
 ================
 .. automodule:: alchemtest.lammps
 

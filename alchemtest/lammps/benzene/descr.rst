@@ -16,12 +16,21 @@ Data Set Characteristics:
     :Temperature: 300 K
     :Pressure: 1 bar
     :Alchemical Pathway: vdw + coul --> vdw --> vacuum
+    :Experimental Hydration Free Energy: -0.90 +- 0.2 kcal/mol
     :Missing Values: None
     :Energy unit: kcal/mol
     :Time unit: fs
     :Creator: Jennifer A. Clark
     :Donor: Jennifer A. Clark
     :Date: Dec. 2024
+    :License: `NIST <https://www.nist.gov/disclaimer>`_    
+    :DOI: NEED THIS!!!!
 
 This dataset was provided by @jaclark5 on
-`Github <https://github.com/alchemistry/alchemtest/issues/???>`_
+`NIST MIDAS <https://midas.nist.gov>`_
+
+Experimental value sourced from [Mobley2013]_.
+
+.. [Mobley2013] Mobley, David L. (2013). Experimental and Calculated Small 
+    Molecule Hydration Free Energies. UC Irvine: Department of Pharmaceutical 
+    Sciences, UCI. Retrieved from: http://escholarship.org/uc/item/6sd403pz
