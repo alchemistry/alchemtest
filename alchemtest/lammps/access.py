@@ -66,7 +66,7 @@ def load_lj_dimer():
 
     """
     module_path = dirname(__file__)
-    data = glob(join(module_path, 'lj_dimer/files/linear*.txt'))
+    data = glob(join(module_path, 'lj_dimer/cross_epsilon/linear*.txt'))
 
     with open(join(module_path, 'lj_dimer', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
