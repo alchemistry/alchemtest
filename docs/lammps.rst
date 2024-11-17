@@ -14,6 +14,7 @@ can be accessed using the following accessor functions:
 .. autosummary::
 
    load_benzene
+   load_lj_dimer
 
 
 -----------------
@@ -30,4 +31,9 @@ were run independently.
 .. include:: ../alchemtest/lammps/benzene/descr.rst
 
 .. autofunction:: alchemtest.lammps.load_benzene
+
+.. _lammps_lj_dimer:
+.. include:: ../alchemtest/lammps/lj_dimer/descr.rst
+
+.. autofunction:: alchemtest.lammps.load_lj_dimer
    

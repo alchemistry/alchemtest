@@ -2,4 +2,4 @@
 
 """
 
-from .access import load_benzene
+from .access import load_benzene, load_lj_dimer

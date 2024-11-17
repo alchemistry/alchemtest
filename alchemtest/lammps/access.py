@@ -51,3 +51,25 @@ def load_benzene():
 
     return Bunch(data=data,
                  DESCR=fdescr)
+
+
+def load_lj_dimer():
+    """Load data set of LJ dimer in solvent.
+
+    Returns
+    -------
+    data: Bunch
+        Dictionary-like object, the interesting attributes are:
+
+        - 'data' : the data files from lammps dump output        
+        - 'DESCR': the full description of the dataset
+
+    """
+    module_path = dirname(__file__)
+    data = glob(join(module_path, 'lj_dimer/files/linear*.txt'))
+
+    with open(join(module_path, 'lj_dimer', 'descr.rst')) as rst_file:
+        fdescr = rst_file.read()
+
+    return Bunch(data=data,
+                 DESCR=fdescr)
