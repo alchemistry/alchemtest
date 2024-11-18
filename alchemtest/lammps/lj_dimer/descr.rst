@@ -23,7 +23,7 @@ Data Set Characteristics:
     :Donor: Jennifer A. Clark
     :Date: Dec. 2024
     :License: `NIST <https://www.nist.gov/disclaimer>`_    
-    :DOI: NEED THIS!!!!
+    :DOI: 10.18434/mds2-3637
 
 This dataset was provided by @jaclark5 on
 `NIST MIDAS <https://midas.nist.gov>`_
