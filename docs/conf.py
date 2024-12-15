@@ -170,5 +170,5 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
-intersphinx_mapping = {'https://docs.python.org/': None,
+intersphinx_mapping = {'python': ('https://docs.python.org/3', None),
                        'alchemlyb': ('https://alchemlyb.readthedocs.io/en/latest/', None)}
