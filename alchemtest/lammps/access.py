@@ -35,14 +35,14 @@ def load_benzene():
     module_path = dirname(__file__)
     data = {
         "mbar": {
-            '1_coul-off': glob(join(module_path, 'benzene/1_NPT_coul/mbar*.txt')),
-            '2_vdw': glob(join(module_path, 'benzene/2_NPT_vdw/mbar*.txt')),
-            '3_coul-on': glob(join(module_path, 'benzene/3_NVT_coul/mbar*.txt')),                
+            '1_coul-off': glob(join(module_path, 'benzene/1_NPT_coul/mbar*.txt.bz2')),
+            '2_vdw': glob(join(module_path, 'benzene/2_NPT_vdw/mbar*.txt.bz2')),
+            '3_coul-on': glob(join(module_path, 'benzene/3_NVT_coul/mbar*.txt.bz2')),                
         },
         "ti": {
-            '1_coul-off': glob(join(module_path, 'benzene/1_NPT_coul/ti*.txt')),
-            '2_vdw': glob(join(module_path, 'benzene/2_NPT_vdw/ti*.txt')),
-            '3_coul-on': glob(join(module_path, 'benzene/3_NVT_coul/ti*.txt')),    
+            '1_coul-off': glob(join(module_path, 'benzene/1_NPT_coul/ti*.txt.bz2')),
+            '2_vdw': glob(join(module_path, 'benzene/2_NPT_vdw/ti*.txt.bz2')),
+            '3_coul-on': glob(join(module_path, 'benzene/3_NVT_coul/ti*.txt.bz2')),    
         }
     }
 
@@ -66,7 +66,7 @@ def load_lj_dimer():
 
     """
     module_path = dirname(__file__)
-    data = glob(join(module_path, 'lj_dimer/cross_epsilon/linear*.txt'))
+    data = glob(join(module_path, 'lj_dimer/cross_epsilon/linear*.txt.bz2'))
 
     with open(join(module_path, 'lj_dimer', 'descr.rst')) as rst_file:
         fdescr = rst_file.read()
