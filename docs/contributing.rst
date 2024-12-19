@@ -127,13 +127,17 @@ Process
    (possibly inside another dictionary). It should be possible to work
    with your dataset as shown under :ref:`usage`.
 
-   Try building the documentation with
+   Try building the documentation in the alchemtest/docs directory with
 
    .. code-block:: bash
 
-      python setup.py build_sphinx
+      make html
 
-   and look at the docs in :file:`build/sphinx/html/index.html`.
+   and look at the docs from the same directory with 
+   
+   .. code-block:: bash
+
+      open _build/html/index.html
 
    Check that your documentation is visible. If not, it's possible
    that another page needs to be added to the docs — just move ahead

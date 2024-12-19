@@ -69,7 +69,6 @@ suite it may contain bugs. Please raise any issues or questions in the
     :maxdepth: 1
     :caption: Datasets
 
-    gmx
     amber
     gmx
     gomc
