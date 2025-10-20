@@ -24,7 +24,7 @@ jobs:
     strategy:
       matrix:
         os: [macOS-latest, ubuntu-latest, windows-latest]
-        python-version: ["3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13", "3.14"]
         # Only test lowest and highest version on the expensive/slow
         # macOS and windows runners (UPDATE when supported versions change):
         exclude:
@@ -32,13 +32,20 @@ jobs:
             python-version: 3.10
           - os: macOS-latest
             python-version: 3.11
+          - os: macOS-latest
+            python-version: 3.12
+          - os: macOS-latest
+            python-version: 3.13
           - os: windows-latest
             python-version: 3.10
           - os: windows-latest
             python-version: 3.11
-
+          - os: windows-latest
+            python-version: 3.12
+          - os: windows-latest
+            python-version: 3.13
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       # More info on options: https://github.com/marketplace/actions/provision-with-micromamba
       - uses: mamba-org/provision-with-micromamba@main
@@ -77,12 +84,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v5
 
     - name: Setup Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v6
       with:
-        python-version: 3.9
+        python-version: 3.12
 
     - name: Install tools
       run: |
