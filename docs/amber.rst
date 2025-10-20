@@ -18,7 +18,6 @@ They can be accessed using the following accessor functions:
    load_bace_improper
    load_bace_example
    load_simplesolvated
-   load_invalidfiles
    load_testfiles
 
 
