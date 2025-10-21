@@ -40,13 +40,11 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      # More info on options: https://github.com/marketplace/actions/provision-with-micromamba
-      - uses: mamba-org/provision-with-micromamba@main
+      - uses: uses: mamba-org/setup-micromamba@main
         with:
           environment-file: devtools/conda-envs/test_env.yaml
           environment-name: test
-          channels: conda-forge,defaults
-          extra-specs: |
+          create-args: |
             python=${{ matrix.python-version }}
 
       - name: Install package
