@@ -43,8 +43,7 @@ jobs:
             python-version: 3.13
     steps:
       - uses: actions/checkout@v5
-
-      - uses: uses: mamba-org/setup-micromamba@main
+      - uses: mamba-org/setup-micromamba@main
         with:
           environment-file: devtools/conda-envs/test_env.yaml
           environment-name: test
