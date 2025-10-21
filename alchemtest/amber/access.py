@@ -104,43 +104,6 @@ def load_simplesolvated():
                  DESCR=fdescr)
 
 
-def load_invalidfiles():
-    """Load the invalid files.
-
-    Returns
-    -------
-    data : Bunch
-        Dictionary-like object, the interesting attributes are:
-
-        - 'data' : the example of invalid data files
-        - 'DESCR': the full description of the dataset
-
-
-    .. deprecated:: 0.7
-       use :func:`load_testfiles` instead
-
-    """
-
-    warnings.warn(
-        "load_invalidfiles() was deprecated in 0.7.0 and will be removed in the following release."
-        " Use load_testfiles() instead",
-        DeprecationWarning)
-    module_path = Path(__file__).parent
-    data = [[
-        module_path / 'testfiles' / 'no_useful_data.out.bz2',
-        module_path / 'testfiles' / 'no_control_data.out.bz2',
-        module_path / 'testfiles' / 'no_temp0_set.out.bz2',
-        module_path / 'testfiles' / 'no_free_energy_info.out.bz2',
-        module_path / 'testfiles' / 'no_atomic_section.out.bz2',
-        module_path / 'testfiles' / 'no_results_section.out.bz2']]
-
-    with open(module_path / 'testfiles' / 'descr_invalid.rst') as rst_file:
-        fdescr = rst_file.read()
-
-    return Bunch(data=data,
-                 DESCR=fdescr)
-
-
 def load_testfiles():
     """Load incomplete or wrongly formatted files to be used to test the AMBER parsers.
 

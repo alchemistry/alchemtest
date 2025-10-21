@@ -1,9 +1,6 @@
 name: test
 channels:
-
   - conda-forge
-
-  - defaults
 dependencies:
     # Base depends
   - python
@@ -16,6 +13,6 @@ dependencies:
 
   - wheel
   - pytest-pep8
-  - build
+  - python-build
 
 

@@ -3,7 +3,7 @@ import pytest
 
 from alchemtest import Bunch
 from alchemtest.amber import (load_bace_improper, load_bace_example,
-                              load_simplesolvated, load_invalidfiles, 
+                              load_simplesolvated, 
                               load_testfiles, load_tyk2_example)
 
 
@@ -86,22 +86,6 @@ class TestTYK2example(BaseDatasetTest):
     def dataset(self, request):
         return super(TestTYK2example, self).dataset(request)
 
-
-# The invalidfiles dataset does not conform to the API. load_invalidfiles()
-# returns a listv with just one element as data (and not a dict) so we create a
-# fake dataset:
-def _load_labelled_invalidfiles():
-    dset = load_invalidfiles()
-    return Bunch(data={'invalid_files': dset.data[0]},
-                 DESCR=dset.DESCR)
-
-class TestInvalidFiles(BaseDatasetTest):
-     @pytest.fixture(scope="class",
-                     params = [(_load_labelled_invalidfiles,
-                                ('invalid_files',), (6,)),
-                               ])
-     def dataset(self, request):
-         return super(TestInvalidFiles, self).dataset(request)
 
 
 
