@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "alchemtest"
 description = "The simple alchemistry test set."
 dynamic = ["version"]
-readme = "README.md"
+readme = "README.rst"
 authors = [
     { name = "David Dotson", email = "dotsdl@gmail.com" },
     { name = "Oliver Beckstein", email = "orbeckst@gmail.com" },

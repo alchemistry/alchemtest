@@ -21,20 +21,16 @@ modification, separation, for any purpose and without a charge.
 
 .. |docs| image:: https://readthedocs.org/projects/alchemtest/badge/?version=latest
     :alt: Documentation
-    :scale: 100%
     :target: https://alchemtest.readthedocs.io/en/latest/
 
 .. |doi| image:: https://zenodo.org/badge/83470847.svg
     :alt: Zenodo DOI
-    :scale: 100%
     :target: https://zenodo.org/badge/latestdoi/83470847
 
 .. |build| image:: https://github.com/alchemistry/alchemtest/actions/workflows/CI.yaml/badge.svg?branch=master
     :alt: Build Status
-    :scale: 100%
     :target: https://github.com/alchemistry/alchemtest/actions/workflows/CI.yaml
 
 .. |cov| image:: https://codecov.io/gh/alchemistry/alchemtest/branch/master/graph/badge.svg
     :alt: Code coverage
-    :scale: 100%
     :target: https://codecov.io/gh/alchemistry/alchemtest
