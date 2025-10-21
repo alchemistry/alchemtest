@@ -13,6 +13,6 @@ dependencies:
 
   - wheel
   - pytest-pep8
-  - build
+  - python-build
 
 
