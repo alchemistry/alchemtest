@@ -14,15 +14,14 @@ authors = [
     { name = "Oliver Beckstein", email = "orbeckst@gmail.com" },
     { name = "Zhiyi Wu", email = "william@zhiyiwu.me" }
 ]
-license = { text = "BSD-3-Clause" }
+license = "BSD-3-Clause"
 # See https://pypi.org/classifiers/
 classifiers = [
-    'Development Status :: 5 - Production/Stable',
+    'Development Status :: 6 - Mature',
     'Intended Audience :: Science/Research',
-    'License :: OSI Approved :: BSD License',
     'Operating System :: POSIX',
-    'Operating System :: MacOS :: MacOS X',
-    'Operating System :: Microsoft :: Windows ',
+    'Operating System :: MacOS',
+    'Operating System :: Microsoft :: Windows',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
