@@ -17,7 +17,7 @@ authors = [
 license = "BSD-3-Clause"
 # See https://pypi.org/classifiers/
 classifiers = [
-    'Development Status :: 5 - Production/Stable',
+    'Development Status :: 6 - Mature',
     'Intended Audience :: Science/Research',
     'Operating System :: POSIX',
     'Operating System :: MacOS',
