@@ -38,7 +38,7 @@ jobs:
         python-version: "3.x"
     - name: Install build dependencies
       run: |
-        python -m pip install build twine
+        python -m pip install build
     - name: build source and wheel distribution packages
       run: |
         python -m build
@@ -49,7 +49,7 @@ jobs:
         path: dist/
 
   publish-to-pypi:
-    name: Publish Python 🐍 distribution 📦 to PyPI
+    name: "PyPI: Publish Python 🐍 distribution 📦"
     # only publish to PyPi for releases
     if: |
       github.repository == 'alchemistry/alchemtest' &&
@@ -73,7 +73,7 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
 
   publish-to-testpypi:
-    name: Publish Python 🐍 distribution 📦 to TestPyPI
+    name: "TestPyPI: Publish Python 🐍 distribution 📦"
     #  publish to TesPyPi for tags
     if: |
       github.repository == 'alchemistry/alchemtest' &&
@@ -97,4 +97,5 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
+        verbose: true
 
