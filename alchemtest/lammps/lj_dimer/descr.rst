@@ -25,5 +25,5 @@ Data Set Characteristics:
     :License: `NIST <https://www.nist.gov/disclaimer>`_    
     :DOI: 10.18434/mds2-3637
 
-This dataset was provided by @jaclark5 in
-`NIST Data Discovery <https://data.nist.gov/>`_
+This dataset was provided by @jaclark5 in the
+`NIST Data Repository <https://data.nist.gov/>`_
