@@ -3,7 +3,7 @@ LAMMPS: Benzene in Water
 
 Benzene in water, alchemically decoupled to benzene in vacuum separated from bulk water
 
-Test using LAMMPS dump files turned into u_nk and dHdl dataframes that could be calculated
+Test using LAMMPS dump files turned into u_nk and dHdl DataFrames that could be calculated
 with MBAR or TI.
 
 Notes
@@ -26,8 +26,8 @@ Data Set Characteristics:
     :License: `NIST <https://www.nist.gov/disclaimer>`_    
     :DOI: 10.18434/mds2-3637
 
-This dataset was provided by @jaclark5 on
-`NIST MIDAS <https://midas.nist.gov>`_
+This dataset was provided by @jaclark5 in
+`NIST Data Discovery <https://data.nist.gov/>`_
 
 Experimental value sourced from [Mobley2013]_.
 
