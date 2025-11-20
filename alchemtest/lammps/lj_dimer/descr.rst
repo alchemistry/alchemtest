@@ -3,7 +3,7 @@ LAMMPS: LJ Dimer in Solvent
 
 LJ Dimer in solvent, alchemically decoupled to a dimer in vacuum separated from bulk solvent
 
-Test using LAMMPS dump files with PE to be turned into u_nk and dHdl dataframes that could be calculated
+Test using LAMMPS dump files with PE to be turned into u_nk and dHdl DataFrames that could be calculated
 with MBAR or TI.
 
 Notes
@@ -25,5 +25,5 @@ Data Set Characteristics:
     :License: `NIST <https://www.nist.gov/disclaimer>`_    
     :DOI: 10.18434/mds2-3637
 
-This dataset was provided by @jaclark5 on
-`NIST MIDAS <https://midas.nist.gov>`_
+This dataset was provided by @jaclark5 in the
+`NIST Data Repository <https://data.nist.gov/>`_
