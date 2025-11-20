@@ -69,6 +69,7 @@ zip-safe = false
 # recursively because of its __init__.py file, but the data subdirectory is excluded
 # with include-package-data = false and namespaces = false.
 include-package-data = true
+
 [tool.setuptools.packages.find]
 namespaces = false
 where = ["."]
@@ -96,3 +97,27 @@ default-tag = "1.0.0"
 
 [tool.versioningit.write]
 file = "alchemtest/_version.py"
+
+# Coverage configuration (migrated from setup.cfg)
+[tool.coverage.run]
+# .coveragerc to control coverage.py and pytest-cov
+omit = [
+    "*/tests/*",  # Omit the tests
+    "alchemtest/_version.py",  # Omit generated versioneer
+]
+
+# YAPF configuration (migrated from setup.cfg)
+# YAPF, in .style.yapf files this shows up as "[style]" header
+[tool.yapf]
+COLUMN_LIMIT = 119
+INDENT_WIDTH = 4
+USE_TABS = false
+
+# Flake8 configuration (migrated from setup.cfg)
+# Flake8, PyFlakes, etc
+[tool.flake8]
+max-line-length = 119
+
+# Setuptools aliases (migrated from setup.cfg)
+[tool.setuptools.aliases]
+test = "pytest"
