@@ -118,6 +118,3 @@ USE_TABS = false
 [tool.flake8]
 max-line-length = 119
 
-# Setuptools aliases (migrated from setup.cfg)
-[tool.setuptools.aliases]
-test = "pytest"

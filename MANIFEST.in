@@ -2,5 +2,4 @@ include *.rst
 recursive-include alchemtest *.gz *.bz2 *.zip *.rst *.txt *.out *.xvg *.npy
 include README.rst
 include LICENSE
-include versioneer.py
 include alchemtest/_version.py
