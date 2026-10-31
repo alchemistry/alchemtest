@@ -2,17 +2,14 @@ name: test
 channels:
   - conda-forge
 dependencies:
-    # Base depends
+  # Base depends
   - python
   - pip
-
-    # Testing
+  # Testing
   - pytest
   - pytest-cov
   - codecov
-
   - wheel
-  - pytest-pep8
   - python-build
 
 
