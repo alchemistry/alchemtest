@@ -41,7 +41,6 @@ suite it may contain bugs. Please raise any issues or questions in the
 
 .. |doi| image:: https://zenodo.org/badge/83470847.svg
     :alt: Zenodo DOI
-    :scale: 100%
     :target: https://zenodo.org/badge/latestdoi/83470847
 
 .. _`alchemlyb`: https://github.com/alchemistry/alchemlyb
